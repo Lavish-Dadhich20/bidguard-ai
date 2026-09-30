@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BidGuard AI — Compliance Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#101A2B; --ink-2:#1C2A42; --paper:#EEF1EF; --paper-2:#E2E6E2; --card:#FBFBF9;
+  --line:#D8DAD3; --brass:#A9863F; --brass-2:#8C6E30;
+  --pass:#2F7A4D; --pass-bg:#E4F1E8; --fail:#B3413B; --fail-bg:#FBE7E5;
+  --review:#9C6B18; --review-bg:#FBF0DC; --missing:#5B6472; --missing-bg:#E7E9EC;
+  --muted:#5B6472; --radius:4px;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  box-sizing:border-box;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#0C1220; --ink-2:#141E30; --paper:#141A24; --paper-2:#1B2230; --card:#1A2130;
+    --line:#2B3444; --brass:#C9A362; --brass-2:#E3BE7F;
+    --pass:#5FBE84; --pass-bg:#16281D; --fail:#E28983; --fail-bg:#301818;
+    --review:#E0B15C; --review-bg:#332711; --missing:#9AA3B2; --missing-bg:#232A38;
+    --muted:#9AA3B2;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#0C1220; --ink-2:#141E30; --paper:#141A24; --paper-2:#1B2230; --card:#1A2130;
+  --line:#2B3444; --brass:#C9A362; --brass-2:#E3BE7F;
+  --pass:#5FBE84; --pass-bg:#16281D; --fail:#E28983; --fail-bg:#301818;
+  --review:#E0B15C; --review-bg:#332711; --missing:#9AA3B2; --missing-bg:#232A38;
+  --muted:#9AA3B2;
+}
+*{box-sizing:border-box;}
+html{scroll-padding-top:env(safe-area-inset-top,0px); height:100%;}
+body{
+  margin:0; height:100%; background:var(--paper); color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif; font-size:14px; line-height:1.5;
+  display:flex; flex-direction:column;
+}
+header.topbar{
+  background:var(--ink); color:#F4F2EA; padding:18px 24px calc(18px + env(safe-area-inset-top,0px));
+  padding-top:calc(18px + env(safe-area-inset-top,0px));
+  display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  border-bottom:3px solid var(--brass);
+}
+header.topbar .brand{display:flex; align-items:baseline; gap:12px;}
+header.topbar h1{font-family:'Source Serif 4',serif; font-weight:700; font-size:22px; margin:0; letter-spacing:.2px;}
+header.topbar .tag{font-size:11px; color:var(--brass); border:1px solid var(--brass); border-radius:2px; padding:2px 6px; font-family:'JetBrains Mono',monospace;}
+header.topbar .tender{font-size:12.5px; color:#C7CCD8; font-family:'JetBrains Mono',monospace;}
+main.layout{flex:1; display:flex; min-height:0; overflow:hidden;}
+nav.roster{
+  width:300px; min-width:220px; max-width:340px; background:var(--paper-2); border-right:1px solid var(--line);
+  overflow-y:auto; flex-shrink:0;
+}
+nav.roster .roster-head{padding:14px 16px 8px; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); font-weight:600;}
+.bidder-row{
+  display:flex; align-items:center; gap:10px; padding:11px 16px; cursor:pointer; border-left:3px solid transparent;
+  border-bottom:1px solid var(--line);
+}
+.bidder-row:hover{background:var(--card);}
+.bidder-row.active{background:var(--card); border-left-color:var(--brass);}
+.dot{width:9px; height:9px; border-radius:50%; flex-shrink:0;}
+.bidder-row .name{flex:1; min-width:0; font-weight:500; font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.bidder-row .pct{font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--muted);}
+section.detail{flex:1; overflow-y:auto; padding:28px 32px 60px;}
+.report-head{display:flex; gap:28px; align-items:center; flex-wrap:wrap; margin-bottom:18px;}
+.report-head h2{font-family:'Source Serif 4',serif; font-size:26px; margin:0 0 4px; font-weight:700;}
+.report-head .meta{color:var(--muted); font-size:12.5px; font-family:'JetBrains Mono',monospace;}
+.gauge{
+  width:96px; height:96px; border-radius:50%; flex-shrink:0; display:flex; align-items:center; justify-content:center;
+  background:conic-gradient(var(--g-color) calc(var(--pct)*1%), var(--line) 0);
+}
+.gauge .inner{width:74px; height:74px; border-radius:50%; background:var(--paper); display:flex; flex-direction:column; align-items:center; justify-content:center;}
+.gauge .inner b{font-size:18px; font-family:'JetBrains Mono',monospace;}
+.gauge .inner span{font-size:9px; color:var(--muted); letter-spacing:.05em;}
+.stat-row{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 18px;}
+.stat-pill{border:1px solid var(--line); background:var(--card); border-radius:var(--radius); padding:7px 12px; font-size:12px; display:flex; gap:6px; align-items:center;}
+.stat-pill b{font-family:'JetBrains Mono',monospace; font-size:13px;}
+.banner{border-radius:var(--radius); padding:12px 16px; margin-bottom:16px; font-size:13px; border:1px solid; display:flex; gap:10px; align-items:flex-start;}
+.banner.fail{background:var(--fail-bg); border-color:var(--fail); color:var(--fail);}
+.banner.review{background:var(--review-bg); border-color:var(--review); color:var(--review);}
+.banner.ok{background:var(--pass-bg); border-color:var(--pass); color:var(--pass);}
+.banner strong{display:block; font-size:13px; margin-bottom:2px;}
+.category-group{margin-bottom:22px;}
+.category-title{font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); font-weight:600; margin:0 0 8px; padding-bottom:6px; border-bottom:1px solid var(--line);}
+.req-row{border-bottom:1px solid var(--line); padding:10px 0; display:grid; grid-template-columns:1fr auto; gap:4px 12px; align-items:start;}
+.req-row .name-cell{font-weight:500; font-size:13.5px;}
+.req-row .name-cell .mand{font-size:10px; color:var(--brass-2); font-weight:600; margin-left:6px;}
+.pill{font-size:10.5px; font-weight:700; letter-spacing:.03em; padding:3px 8px; border-radius:2px; white-space:nowrap;}
+.pill.PASS{background:var(--pass-bg); color:var(--pass);}
+.pill.FAIL{background:var(--fail-bg); color:var(--fail);}
+.pill.REVIEW{background:var(--review-bg); color:var(--review);}
+.pill.MISSING{background:var(--missing-bg); color:var(--missing);}
+.req-row .reason{grid-column:1 / -1; font-size:12.5px; color:var(--muted); line-height:1.55; max-width:78ch;}
+.req-row .evidence{grid-column:1 / -1; font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--muted); display:flex; gap:16px; flex-wrap:wrap;}
+.evidence span b{color:var(--ink);}
+::-webkit-scrollbar{width:9px;} ::-webkit-scrollbar-thumb{background:var(--line); border-radius:5px;}
+@media (max-width:720px){
+  main.layout{flex-direction:column;}
+  nav.roster{width:100%; max-width:none; max-height:180px;}
+  section.detail{padding:18px 16px 40px;}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <h1>BidGuard AI</h1>
+    <span class="tag">Compliance Ledger</span>
+  </div>
+  <div class="tender" id="tenderMeta"></div>
+</header>
+<main class="layout">
+  <nav class="roster">
+    <div class="roster-head">Bidders</div>
+    <div id="rosterList"></div>
+  </nav>
+  <section class="detail" id="detail"></section>
+</main>
+<script>
+const TENDER = __TENDER_JSON__;
+const BIDDERS = __BIDDERS_JSON__;
+const GOV = __GOV_JSON__;
+
+function getNested(obj, path){
+  if(!path) return undefined;
+  return path.split('.').reduce((o,k)=> (o && typeof o==='object' && k in o) ? o[k] : undefined, obj);
+}
+function normStr(v){ return typeof v==='string' ? v.trim().toUpperCase() : v; }
+function applyOperator(op, actual, expected){
+  try{
+    switch(op){
+      case '==': return normStr(actual)===normStr(expected);
+      case '!=': return normStr(actual)!==normStr(expected);
+      case '>': return parseFloat(actual) > parseFloat(expected);
+      case '>=': return parseFloat(actual) >= parseFloat(expected);
+      case '<': return parseFloat(actual) < parseFloat(expected);
+      case '<=': return parseFloat(actual) <= parseFloat(expected);
+      case 'contains': return String(actual).toLowerCase().includes(String(expected).toLowerCase());
+      case 'boolean': return Boolean(actual)===Boolean(expected);
+    }
+  }catch(e){return false;}
+  return false;
+}
+function checkField(req, bidder){
+  const path = req.field_to_check;
+  const actual = getNested(bidder, path);
+  if(actual===undefined){
+    return {status:'MISSING', extracted_value:null, reason:`Required field '${path}' was not found in the extracted bidder data.`};
+  }
+  const passed = applyOperator(req.operator, actual, req.value);
+  const reason = `'${path}' = ${JSON.stringify(actual)} ${passed?'satisfies':'does NOT satisfy'} the requirement (${req.operator} ${JSON.stringify(req.value)}).`;
+  return {status: passed?'PASS':'FAIL', extracted_value:actual, reason};
+}
+function govLookup(source, identifier, field){
+  if(!source || identifier===undefined || identifier===null) return undefined;
+  const table = GOV[source]; if(!table) return undefined;
+  const rec = table[identifier]; if(!rec) return undefined;
+  return field ? rec[field] : undefined;
+}
+function compareGov(bidderVal, govVal){
+  if(govVal===undefined || govVal===null) return 'UNAVAILABLE';
+  if(typeof bidderVal==='string' || typeof govVal==='string'){
+    return String(bidderVal).trim().toUpperCase()===String(govVal).trim().toUpperCase() ? 'MATCH':'MISMATCH';
+  }
+  if(typeof bidderVal==='boolean' || typeof govVal==='boolean'){
+    return Boolean(bidderVal)===Boolean(govVal) ? 'MATCH':'MISMATCH';
+  }
+  return parseFloat(bidderVal)===parseFloat(govVal) ? 'MATCH':'MISMATCH';
+}
+function normalizeName(name){
+  if(!name || typeof name!=='string') return null;
+  return name.replace(/[.,]/g,'').replace(/\s+/g,' ').trim().toUpperCase();
+}
+function identityCheck(bidder){
+  const sources = {PAN:'pan.legal_name', GST:'gst.legal_name', UDYAM:'udyam.legal_name', INCORPORATION:'incorporation.legal_name'};
+  const raw={}, norm={};
+  for(const k in sources){ const v=getNested(bidder,sources[k]); raw[k]=v===undefined?null:v; norm[k]=v===undefined?null:normalizeName(v); }
+  const avail = Object.entries(norm).filter(([k,v])=>v);
+  if(avail.length<2) return {status:'MISSING', reason:'Fewer than two documents carry a legal name, so identity consistency cannot be checked.', extracted_value:raw};
+  const distinct = new Set(avail.map(([k,v])=>v));
+  if(distinct.size===1) return {status:'PASS', reason:`Legal name is consistent across ${avail.map(([k])=>k).join(', ')}: '${[...distinct][0]}'.`, extracted_value:raw};
+  const mismatched = avail.map(([k,v])=>`${k}='${v}'`).join(', ');
+  return {status:'REVIEW', reason:`Legal name differs across documents (${mismatched}). Requires manual review.`, extracted_value:raw};
+}
+function isBlacklisted(identifiers){
+  const list = (GOV.BLACKLIST||[]).map(x=>String(x).trim().toUpperCase());
+  return identifiers.some(id=> id!=null && list.includes(String(id).trim().toUpperCase()));
+}
+function evaluateRequirement(req, bidder){
+  let outcome;
+  if(req.operator==='not_in_blacklist'){
+    const pan = getNested(bidder, req.gov_identifier_field);
+    const blacklisted = isBlacklisted([pan, bidder.company_name]);
+    outcome = {status: blacklisted?'FAIL':'PASS', extracted_value:{pan: pan??null, company_name:bidder.company_name},
+      government_value: blacklisted?'ON_BLACKLIST':'NOT_ON_BLACKLIST',
+      reason: blacklisted? 'Bidder identifier matches an entry on the government blacklist/debarment list.' : 'Bidder does not appear on the government blacklist/debarment list.'};
+  } else if(req.operator==='name_consistency'){
+    const id = identityCheck(bidder);
+    outcome = {status:id.status, extracted_value:id.extracted_value, government_value:null, reason:id.reason};
+  } else {
+    const base = checkField(req, bidder);
+    const source = req.verification_source;
+    if(!source){
+      outcome = {status:base.status, extracted_value: base.extracted_value ?? null, government_value:null,
+        reason: base.status!=='MISSING'? base.reason+' (No independent government verification source configured.)' : base.reason};
+    } else if(base.status==='MISSING'){
+      outcome = {status:'MISSING', extracted_value:null, government_value:null, reason:base.reason};
+    } else {
+      const identifier = getNested(bidder, req.gov_identifier_field);
+      const govVal = govLookup(source, identifier, req.gov_value_field);
+      const cmp = compareGov(base.extracted_value, govVal);
+      if(cmp==='UNAVAILABLE'){
+        outcome = base.status==='PASS'
+          ? {status:'REVIEW', extracted_value:base.extracted_value, government_value:null, reason:`${base.reason} No matching ${source} government record was found for verification (identifier: '${identifier}'), so this requires manual review.`}
+          : {status:base.status, extracted_value:base.extracted_value, government_value:null, reason:`${base.reason} No matching ${source} government record was found to cross-check.`};
+      } else if(cmp==='MISMATCH'){
+        outcome = base.status==='PASS'
+          ? {status:'REVIEW', extracted_value:base.extracted_value, government_value:govVal, reason:`Self-declared data (${JSON.stringify(base.extracted_value)}) satisfies the requirement, but the ${source} government record shows a different value (${JSON.stringify(govVal)}). Requires manual review.`}
+          : {status:base.status, extracted_value:base.extracted_value, government_value:govVal, reason:`${base.reason} The ${source} government record also shows a differing value (${JSON.stringify(govVal)}).`};
+      } else {
+        outcome = {status:base.status, extracted_value:base.extracted_value, government_value:govVal, reason:`${base.reason} Confirmed against ${source} government record.`};
+      }
+    }
+  }
+  return {requirement_id:req.requirement_id, requirement_name:req.requirement_name, category:req.category,
+    mandatory:!!req.mandatory, status:outcome.status, extracted_value:outcome.extracted_value,
+    required_value: req.value ?? null, government_value:outcome.government_value, reason:outcome.reason};
+}
+function scoreResults(results){
+  const total = results.length;
+  const pass = results.filter(r=>r.status==='PASS').length;
+  const fail = results.filter(r=>r.status==='FAIL').length;
+  const review = results.filter(r=>r.status==='REVIEW').length;
+  const missing = results.filter(r=>r.status==='MISSING').length;
+  const pct = total ? Math.round((pass/total)*1000)/10 : 0;
+  const mandatoryFailure = results.some(r=>r.mandatory && r.status==='FAIL');
+  const mandatoryMissing = results.some(r=>r.mandatory && r.status==='MISSING');
+  const mandatoryReview = results.some(r=>r.mandatory && r.status==='REVIEW');
+  let overall = 'COMPLIANT';
+  if(mandatoryFailure) overall='NON_COMPLIANT_MANDATORY_FAILURE';
+  else if(mandatoryMissing) overall='INCOMPLETE_MANDATORY_DATA_MISSING';
+  else if(mandatoryReview || review>0) overall='NEEDS_MANUAL_REVIEW';
+  return {compliance_percentage:pct, pass, fail, review, missing, total, mandatory_failure:mandatoryFailure, mandatory_missing:mandatoryMissing, overall_status:overall};
+}
+function evaluateBidder(bidder){
+  const reqs = TENDER.requirements.map(r=>evaluateRequirement(r, bidder));
+  return {company_name:bidder.company_name, requirements:reqs, ...scoreResults(reqs)};
+}
+
+const RESULTS = BIDDERS.map(evaluateBidder);
+const OVERALL_LABEL = {
+  COMPLIANT:['All requirements verified','ok'],
+  NON_COMPLIANT_MANDATORY_FAILURE:['A mandatory requirement has failed','fail'],
+  INCOMPLETE_MANDATORY_DATA_MISSING:['Mandatory data is missing from the record','fail'],
+  NEEDS_MANUAL_REVIEW:['Needs manual review before a decision','review'],
+};
+function dotColor(r){
+  if(r.mandatory_failure || r.mandatory_missing) return 'var(--fail)';
+  if(r.overall_status==='NEEDS_MANUAL_REVIEW') return 'var(--review)';
+  return 'var(--pass)';
+}
+let selected = RESULTS[0].company_name;
+
+function renderRoster(){
+  document.getElementById('tenderMeta').textContent = `${TENDER.tender_id} · ${TENDER.tender_title} · ${TENDER.requirements.length} requirements · ${RESULTS.length} bidders`;
+  const el = document.getElementById('rosterList');
+  el.innerHTML = RESULTS.map(r => `
+    <div class="bidder-row ${r.company_name===selected?'active':''}" data-name="${encodeURIComponent(r.company_name)}">
+      <span class="dot" style="background:${dotColor(r)}"></span>
+      <span class="name">${r.company_name}</span>
+      <span class="pct">${r.compliance_percentage.toFixed(1)}%</span>
+    </div>`).join('');
+  el.querySelectorAll('.bidder-row').forEach(row=>{
+    row.addEventListener('click', ()=>{ selected = decodeURIComponent(row.dataset.name); renderRoster(); renderDetail(); });
+  });
+}
+
+function renderDetail(){
+  const r = RESULTS.find(x=>x.company_name===selected);
+  const gcolor = r.mandatory_failure||r.mandatory_missing ? 'var(--fail)' : (r.review>0 ? 'var(--review)' : 'var(--pass)');
+  const groups = {};
+  r.requirements.forEach(req=>{ (groups[req.category]=groups[req.category]||[]).push(req); });
+
+  let banner = '';
+  if(r.mandatory_failure){
+    banner = `<div class="banner fail"><div><strong>Mandatory requirement failed</strong>This bidder fails at least one mandatory requirement and must not be treated as eligible just because the overall score looks high.</div></div>`;
+  } else if(r.mandatory_missing){
+    banner = `<div class="banner fail"><div><strong>Mandatory data missing</strong>At least one mandatory requirement could not be evaluated because the underlying data was never extracted.</div></div>`;
+  } else if(r.overall_status==='NEEDS_MANUAL_REVIEW'){
+    banner = `<div class="banner review"><div><strong>Needs manual review</strong>Every mandatory requirement currently passes, but one or more items need a human to confirm before sign-off.</div></div>`;
+  } else {
+    banner = `<div class="banner ok"><div><strong>Fully compliant</strong>Every requirement passed and was confirmed against government records.</div></div>`;
+  }
+
+  const groupsHtml = Object.entries(groups).map(([cat, reqs])=>`
+    <div class="category-group">
+      <div class="category-title">${cat.replace(/_/g,' ')}</div>
+      ${reqs.map(req=>`
+        <div class="req-row">
+          <div class="name-cell">${req.requirement_name}${req.mandatory?'<span class="mand">MANDATORY</span>':''}</div>
+          <span class="pill ${req.status}">${req.status}</span>
+          <div class="reason">${req.reason}</div>
+          <div class="evidence">
+            <span>Extracted: <b>${fmt(req.extracted_value)}</b></span>
+            ${req.required_value!==null?`<span>Required: <b>${fmt(req.required_value)}</b></span>`:''}
+            ${req.government_value!==null?`<span>Government: <b>${fmt(req.government_value)}</b></span>`:''}
+          </div>
+        </div>`).join('')}
+    </div>`).join('');
+
+  document.getElementById('detail').innerHTML = `
+    <div class="report-head">
+      <div class="gauge" style="--pct:${r.compliance_percentage}; --g-color:${gcolor}">
+        <div class="inner"><b>${r.compliance_percentage.toFixed(1)}%</b><span>COMPLIANCE</span></div>
+      </div>
+      <div>
+        <h2>${r.company_name}</h2>
+        <div class="meta">${TENDER.tender_id} — ${OVERALL_LABEL[r.overall_status][0]}</div>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-pill"><span style="color:var(--pass)">●</span> Pass <b>${r.pass}</b></div>
+      <div class="stat-pill"><span style="color:var(--fail)">●</span> Fail <b>${r.fail}</b></div>
+      <div class="stat-pill"><span style="color:var(--review)">●</span> Review <b>${r.review}</b></div>
+      <div class="stat-pill"><span style="color:var(--missing)">●</span> Missing <b>${r.missing}</b></div>
+    </div>
+    ${banner}
+    ${groupsHtml}
+  `;
+}
+function fmt(v){
+  if(v===null||v===undefined) return '—';
+  if(typeof v==='object') return Object.values(v).filter(x=>x!=null).join(' / ') || '—';
+  return String(v);
+}
+
+renderRoster();
+renderDetail();
+</script>
+</body>
+</html>

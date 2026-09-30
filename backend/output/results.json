@@ -1,0 +1,1812 @@
+[
+  {
+    "company_name": "Alpha Engineering Works Pvt Ltd",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 100.0,
+    "summary": {
+      "pass": 13,
+      "fail": 0,
+      "review": 0,
+      "missing": 0,
+      "total_requirements": 13
+    },
+    "mandatory_failure": false,
+    "mandatory_missing": false,
+    "overall_status": "COMPLIANT",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'gst.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against GST government record."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "PASS",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "PASS",
+        "extracted_value": 72000000,
+        "required_value": 50000000,
+        "government_value": 72000000,
+        "reason": "'turnover.annual_turnover' = 72000000 satisfies the requirement (>= 50000000). Confirmed against TURNOVER government record."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'epfo.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against EPFO government record."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'esic.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against ESIC government record."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "PASS",
+        "extracted_value": 65,
+        "required_value": 50,
+        "government_value": 65,
+        "reason": "'local_content.percentage' = 65 satisfies the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "PASS",
+        "extracted_value": true,
+        "required_value": true,
+        "government_value": true,
+        "reason": "'oem_authorization.valid' = True satisfies the requirement (boolean True). Confirmed against OEM government record."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "PASS",
+        "extracted_value": {
+          "pan": "AAECA1234F",
+          "company_name": "Alpha Engineering Works Pvt Ltd"
+        },
+        "required_value": null,
+        "government_value": "NOT_ON_BLACKLIST",
+        "reason": "Bidder does not appear on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": 8,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = 8 satisfies the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": {
+          "PAN": "Alpha Engineering Works Private Limited",
+          "GST": "Alpha Engineering Works Private Limited",
+          "UDYAM": "Alpha Engineering Works Private Limited",
+          "INCORPORATION": "Alpha Engineering Works Private Limited"
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name is consistent across PAN, GST, UDYAM, INCORPORATION: 'ALPHA ENGINEERING WORKS PRIVATE LIMITED'."
+      }
+    ]
+  },
+  {
+    "company_name": "Bharat Precision Tools Ltd",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 92.31,
+    "summary": {
+      "pass": 12,
+      "fail": 1,
+      "review": 0,
+      "missing": 0,
+      "total_requirements": 13
+    },
+    "mandatory_failure": true,
+    "mandatory_missing": false,
+    "overall_status": "NON_COMPLIANT_MANDATORY_FAILURE",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'gst.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against GST government record."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "PASS",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "FAIL",
+        "extracted_value": 32000000,
+        "required_value": 50000000,
+        "government_value": 32000000,
+        "reason": "'turnover.annual_turnover' = 32000000 does NOT satisfy the requirement (>= 50000000). Confirmed against TURNOVER government record."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'epfo.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against EPFO government record."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'esic.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against ESIC government record."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "PASS",
+        "extracted_value": 58,
+        "required_value": 50,
+        "government_value": 58,
+        "reason": "'local_content.percentage' = 58 satisfies the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "PASS",
+        "extracted_value": true,
+        "required_value": true,
+        "government_value": true,
+        "reason": "'oem_authorization.valid' = True satisfies the requirement (boolean True). Confirmed against OEM government record."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "PASS",
+        "extracted_value": {
+          "pan": "ABTPB5678G",
+          "company_name": "Bharat Precision Tools Ltd"
+        },
+        "required_value": null,
+        "government_value": "NOT_ON_BLACKLIST",
+        "reason": "Bidder does not appear on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": 6,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = 6 satisfies the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": {
+          "PAN": "Bharat Precision Tools Limited",
+          "GST": "Bharat Precision Tools Limited",
+          "UDYAM": "Bharat Precision Tools Limited",
+          "INCORPORATION": "Bharat Precision Tools Limited"
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name is consistent across PAN, GST, UDYAM, INCORPORATION: 'BHARAT PRECISION TOOLS LIMITED'."
+      }
+    ]
+  },
+  {
+    "company_name": "Chandra Fabrication Industries Pvt Ltd",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 92.31,
+    "summary": {
+      "pass": 12,
+      "fail": 1,
+      "review": 0,
+      "missing": 0,
+      "total_requirements": 13
+    },
+    "mandatory_failure": true,
+    "mandatory_missing": false,
+    "overall_status": "NON_COMPLIANT_MANDATORY_FAILURE",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "FAIL",
+        "extracted_value": "INACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "INACTIVE",
+        "reason": "'gst.status' = 'INACTIVE' does NOT satisfy the requirement (== 'ACTIVE'). Confirmed against GST government record."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "PASS",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "PASS",
+        "extracted_value": 61000000,
+        "required_value": 50000000,
+        "government_value": 61000000,
+        "reason": "'turnover.annual_turnover' = 61000000 satisfies the requirement (>= 50000000). Confirmed against TURNOVER government record."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'epfo.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against EPFO government record."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'esic.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against ESIC government record."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "PASS",
+        "extracted_value": 55,
+        "required_value": 50,
+        "government_value": 55,
+        "reason": "'local_content.percentage' = 55 satisfies the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "PASS",
+        "extracted_value": true,
+        "required_value": true,
+        "government_value": true,
+        "reason": "'oem_authorization.valid' = True satisfies the requirement (boolean True). Confirmed against OEM government record."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "PASS",
+        "extracted_value": {
+          "pan": "ACFCI9012H",
+          "company_name": "Chandra Fabrication Industries Pvt Ltd"
+        },
+        "required_value": null,
+        "government_value": "NOT_ON_BLACKLIST",
+        "reason": "Bidder does not appear on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": 5,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = 5 satisfies the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": {
+          "PAN": "Chandra Fabrication Industries Private Limited",
+          "GST": "Chandra Fabrication Industries Private Limited",
+          "UDYAM": "Chandra Fabrication Industries Private Limited",
+          "INCORPORATION": "Chandra Fabrication Industries Private Limited"
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name is consistent across PAN, GST, UDYAM, INCORPORATION: 'CHANDRA FABRICATION INDUSTRIES PRIVATE LIMITED'."
+      }
+    ]
+  },
+  {
+    "company_name": "Deccan Metal Works Pvt Ltd",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 92.31,
+    "summary": {
+      "pass": 12,
+      "fail": 0,
+      "review": 1,
+      "missing": 0,
+      "total_requirements": 13
+    },
+    "mandatory_failure": false,
+    "mandatory_missing": false,
+    "overall_status": "NEEDS_MANUAL_REVIEW",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'gst.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against GST government record."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "PASS",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "PASS",
+        "extracted_value": 55000000,
+        "required_value": 50000000,
+        "government_value": 55000000,
+        "reason": "'turnover.annual_turnover' = 55000000 satisfies the requirement (>= 50000000). Confirmed against TURNOVER government record."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'epfo.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against EPFO government record."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'esic.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against ESIC government record."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "PASS",
+        "extracted_value": 60,
+        "required_value": 50,
+        "government_value": 60,
+        "reason": "'local_content.percentage' = 60 satisfies the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "PASS",
+        "extracted_value": true,
+        "required_value": true,
+        "government_value": true,
+        "reason": "'oem_authorization.valid' = True satisfies the requirement (boolean True). Confirmed against OEM government record."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "PASS",
+        "extracted_value": {
+          "pan": "ADMWD3456K",
+          "company_name": "Deccan Metal Works Pvt Ltd"
+        },
+        "required_value": null,
+        "government_value": "NOT_ON_BLACKLIST",
+        "reason": "Bidder does not appear on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": 4,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = 4 satisfies the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "REVIEW",
+        "extracted_value": {
+          "PAN": "Deccan Metal Works Private Limited",
+          "GST": "Deccan Metal Works Private Limited",
+          "UDYAM": "Deccan Metalworks Pvt. Ltd.",
+          "INCORPORATION": "Deccan Metal Works Private Limited"
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name differs across documents (PAN='DECCAN METAL WORKS PRIVATE LIMITED', GST='DECCAN METAL WORKS PRIVATE LIMITED', UDYAM='DECCAN METALWORKS PVT LTD', INCORPORATION='DECCAN METAL WORKS PRIVATE LIMITED'). This may be a harmless formatting difference or a genuine identity mismatch and requires manual review."
+      }
+    ]
+  },
+  {
+    "company_name": "Everest Heavy Machinery Ltd",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 92.31,
+    "summary": {
+      "pass": 12,
+      "fail": 0,
+      "review": 0,
+      "missing": 1,
+      "total_requirements": 13
+    },
+    "mandatory_failure": false,
+    "mandatory_missing": true,
+    "overall_status": "INCOMPLETE_MANDATORY_DATA_MISSING",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'gst.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against GST government record."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "PASS",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "PASS",
+        "extracted_value": 89000000,
+        "required_value": 50000000,
+        "government_value": 89000000,
+        "reason": "'turnover.annual_turnover' = 89000000 satisfies the requirement (>= 50000000). Confirmed against TURNOVER government record."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'epfo.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against EPFO government record."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'esic.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against ESIC government record."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "PASS",
+        "extracted_value": 52,
+        "required_value": 50,
+        "government_value": 52,
+        "reason": "'local_content.percentage' = 52 satisfies the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "MISSING",
+        "extracted_value": null,
+        "required_value": true,
+        "government_value": null,
+        "reason": "Required field 'oem_authorization.valid' was not found in the extracted bidder data. This document/data point may not have been submitted or the extractor could not read it."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "PASS",
+        "extracted_value": {
+          "pan": "AEHME7890L",
+          "company_name": "Everest Heavy Machinery Ltd"
+        },
+        "required_value": null,
+        "government_value": "NOT_ON_BLACKLIST",
+        "reason": "Bidder does not appear on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": 7,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = 7 satisfies the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": {
+          "PAN": "Everest Heavy Machinery Limited",
+          "GST": "Everest Heavy Machinery Limited",
+          "UDYAM": "Everest Heavy Machinery Limited",
+          "INCORPORATION": "Everest Heavy Machinery Limited"
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name is consistent across PAN, GST, UDYAM, INCORPORATION: 'EVEREST HEAVY MACHINERY LIMITED'."
+      }
+    ]
+  },
+  {
+    "company_name": "Fortune Industrial Solutions Pvt Ltd",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 92.31,
+    "summary": {
+      "pass": 12,
+      "fail": 1,
+      "review": 0,
+      "missing": 0,
+      "total_requirements": 13
+    },
+    "mandatory_failure": true,
+    "mandatory_missing": false,
+    "overall_status": "NON_COMPLIANT_MANDATORY_FAILURE",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'gst.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against GST government record."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "PASS",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "PASS",
+        "extracted_value": 68000000,
+        "required_value": 50000000,
+        "government_value": 68000000,
+        "reason": "'turnover.annual_turnover' = 68000000 satisfies the requirement (>= 50000000). Confirmed against TURNOVER government record."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'epfo.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against EPFO government record."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'esic.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against ESIC government record."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "FAIL",
+        "extracted_value": 35,
+        "required_value": 50,
+        "government_value": 35,
+        "reason": "'local_content.percentage' = 35 does NOT satisfy the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "PASS",
+        "extracted_value": true,
+        "required_value": true,
+        "government_value": true,
+        "reason": "'oem_authorization.valid' = True satisfies the requirement (boolean True). Confirmed against OEM government record."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "PASS",
+        "extracted_value": {
+          "pan": "AFISF2345M",
+          "company_name": "Fortune Industrial Solutions Pvt Ltd"
+        },
+        "required_value": null,
+        "government_value": "NOT_ON_BLACKLIST",
+        "reason": "Bidder does not appear on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": 5,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = 5 satisfies the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": {
+          "PAN": "Fortune Industrial Solutions Private Limited",
+          "GST": "Fortune Industrial Solutions Private Limited",
+          "UDYAM": "Fortune Industrial Solutions Private Limited",
+          "INCORPORATION": "Fortune Industrial Solutions Private Limited"
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name is consistent across PAN, GST, UDYAM, INCORPORATION: 'FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED'."
+      }
+    ]
+  },
+  {
+    "company_name": "Ganga Steel & Allied Industries Limited",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 92.31,
+    "summary": {
+      "pass": 12,
+      "fail": 1,
+      "review": 0,
+      "missing": 0,
+      "total_requirements": 13
+    },
+    "mandatory_failure": true,
+    "mandatory_missing": false,
+    "overall_status": "NON_COMPLIANT_MANDATORY_FAILURE",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'gst.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against GST government record."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "PASS",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "PASS",
+        "extracted_value": 95000000,
+        "required_value": 50000000,
+        "government_value": 95000000,
+        "reason": "'turnover.annual_turnover' = 95000000 satisfies the requirement (>= 50000000). Confirmed against TURNOVER government record."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'epfo.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against EPFO government record."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'esic.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against ESIC government record."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "PASS",
+        "extracted_value": 70,
+        "required_value": 50,
+        "government_value": 70,
+        "reason": "'local_content.percentage' = 70 satisfies the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "PASS",
+        "extracted_value": true,
+        "required_value": true,
+        "government_value": true,
+        "reason": "'oem_authorization.valid' = True satisfies the requirement (boolean True). Confirmed against OEM government record."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "FAIL",
+        "extracted_value": {
+          "pan": "AGSAI6789N",
+          "company_name": "Ganga Steel & Allied Industries Limited"
+        },
+        "required_value": null,
+        "government_value": "ON_BLACKLIST",
+        "reason": "Bidder identifier matches an entry on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": 10,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = 10 satisfies the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": {
+          "PAN": "Ganga Steel & Allied Industries Limited",
+          "GST": "Ganga Steel & Allied Industries Limited",
+          "UDYAM": "Ganga Steel & Allied Industries Limited",
+          "INCORPORATION": "Ganga Steel & Allied Industries Limited"
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name is consistent across PAN, GST, UDYAM, INCORPORATION: 'GANGA STEEL & ALLIED INDUSTRIES LIMITED'."
+      }
+    ]
+  },
+  {
+    "company_name": "Hind Auto Components Pvt Ltd",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 92.31,
+    "summary": {
+      "pass": 12,
+      "fail": 0,
+      "review": 1,
+      "missing": 0,
+      "total_requirements": 13
+    },
+    "mandatory_failure": false,
+    "mandatory_missing": false,
+    "overall_status": "NEEDS_MANUAL_REVIEW",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'gst.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against GST government record."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "PASS",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "PASS",
+        "extracted_value": 58000000,
+        "required_value": 50000000,
+        "government_value": 58000000,
+        "reason": "'turnover.annual_turnover' = 58000000 satisfies the requirement (>= 50000000). Confirmed against TURNOVER government record."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "REVIEW",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": null,
+        "reason": "'epfo.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). However, no matching EPFO government record was found for verification (identifier: 'AHACP0123P'), so this requires manual review."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'esic.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against ESIC government record."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "PASS",
+        "extracted_value": 53,
+        "required_value": 50,
+        "government_value": 53,
+        "reason": "'local_content.percentage' = 53 satisfies the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "PASS",
+        "extracted_value": true,
+        "required_value": true,
+        "government_value": true,
+        "reason": "'oem_authorization.valid' = True satisfies the requirement (boolean True). Confirmed against OEM government record."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "PASS",
+        "extracted_value": {
+          "pan": "AHACP0123P",
+          "company_name": "Hind Auto Components Pvt Ltd"
+        },
+        "required_value": null,
+        "government_value": "NOT_ON_BLACKLIST",
+        "reason": "Bidder does not appear on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": 4,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = 4 satisfies the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": {
+          "PAN": "Hind Auto Components Private Limited",
+          "GST": "Hind Auto Components Private Limited",
+          "UDYAM": "Hind Auto Components Private Limited",
+          "INCORPORATION": "Hind Auto Components Private Limited"
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name is consistent across PAN, GST, UDYAM, INCORPORATION: 'HIND AUTO COMPONENTS PRIVATE LIMITED'."
+      }
+    ]
+  },
+  {
+    "company_name": "Indus Global Manufacturing Pvt Ltd",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 53.85,
+    "summary": {
+      "pass": 7,
+      "fail": 2,
+      "review": 3,
+      "missing": 1,
+      "total_requirements": 13
+    },
+    "mandatory_failure": true,
+    "mandatory_missing": true,
+    "overall_status": "NON_COMPLIANT_MANDATORY_FAILURE",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "REVIEW",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "INACTIVE",
+        "reason": "Self-declared data ('ACTIVE') satisfies the requirement, but the GST government record shows a different value ('INACTIVE'). Requires manual review."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "PASS",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "REVIEW",
+        "extracted_value": 75000000,
+        "required_value": 50000000,
+        "government_value": 48000000,
+        "reason": "Self-declared data (75000000) satisfies the requirement, but the TURNOVER government record shows a different value (48000000). Requires manual review."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'epfo.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against EPFO government record."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "MISSING",
+        "extracted_value": null,
+        "required_value": "COMPLIANT",
+        "government_value": null,
+        "reason": "Required field 'esic.status' was not found in the extracted bidder data. This document/data point may not have been submitted or the extractor could not read it."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "FAIL",
+        "extracted_value": 45,
+        "required_value": 50,
+        "government_value": 45,
+        "reason": "'local_content.percentage' = 45 does NOT satisfy the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "PASS",
+        "extracted_value": true,
+        "required_value": true,
+        "government_value": true,
+        "reason": "'oem_authorization.valid' = True satisfies the requirement (boolean True). Confirmed against OEM government record."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "PASS",
+        "extracted_value": {
+          "pan": "AIGMP4567Q",
+          "company_name": "Indus Global Manufacturing Pvt Ltd"
+        },
+        "required_value": null,
+        "government_value": "NOT_ON_BLACKLIST",
+        "reason": "Bidder does not appear on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "FAIL",
+        "extracted_value": 2,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = 2 does NOT satisfy the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "REVIEW",
+        "extracted_value": {
+          "PAN": "Indus Global Manufacturing Private Limited",
+          "GST": "Indus Global Manufacturers Pvt Ltd",
+          "UDYAM": "Indus Global Manufacturing Pvt Ltd",
+          "INCORPORATION": "Indus Global Manufacturing Pvt Ltd"
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name differs across documents (PAN='INDUS GLOBAL MANUFACTURING PRIVATE LIMITED', GST='INDUS GLOBAL MANUFACTURERS PVT LTD', UDYAM='INDUS GLOBAL MANUFACTURING PVT LTD', INCORPORATION='INDUS GLOBAL MANUFACTURING PVT LTD'). This may be a harmless formatting difference or a genuine identity mismatch and requires manual review."
+      }
+    ]
+  },
+  {
+    "company_name": "Jaipur Precision Castings Ltd",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 92.31,
+    "summary": {
+      "pass": 12,
+      "fail": 0,
+      "review": 1,
+      "missing": 0,
+      "total_requirements": 13
+    },
+    "mandatory_failure": false,
+    "mandatory_missing": false,
+    "overall_status": "NEEDS_MANUAL_REVIEW",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'gst.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against GST government record."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "PASS",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "PASS",
+        "extracted_value": 110000000,
+        "required_value": 50000000,
+        "government_value": 110000000,
+        "reason": "'turnover.annual_turnover' = 110000000 satisfies the requirement (>= 50000000). Confirmed against TURNOVER government record."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'epfo.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against EPFO government record."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'esic.status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against ESIC government record."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "PASS",
+        "extracted_value": 80,
+        "required_value": 50,
+        "government_value": 80,
+        "reason": "'local_content.percentage' = 80 satisfies the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "PASS",
+        "extracted_value": true,
+        "required_value": true,
+        "government_value": true,
+        "reason": "'oem_authorization.valid' = True satisfies the requirement (boolean True). Confirmed against OEM government record."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "PASS",
+        "extracted_value": {
+          "pan": "AJPCL8901R",
+          "company_name": "Jaipur Precision Castings Ltd"
+        },
+        "required_value": null,
+        "government_value": "NOT_ON_BLACKLIST",
+        "reason": "Bidder does not appear on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "PASS",
+        "extracted_value": 12,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = 12 satisfies the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "REVIEW",
+        "extracted_value": {
+          "PAN": "Jaipur Precision Castings Limited",
+          "GST": "Jaipur Precision Castings Limited",
+          "UDYAM": "Jaipur Precision Castings Limited",
+          "INCORPORATION": "Jaipur Precision Castings Ltd."
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name differs across documents (PAN='JAIPUR PRECISION CASTINGS LIMITED', GST='JAIPUR PRECISION CASTINGS LIMITED', UDYAM='JAIPUR PRECISION CASTINGS LIMITED', INCORPORATION='JAIPUR PRECISION CASTINGS LTD'). This may be a harmless formatting difference or a genuine identity mismatch and requires manual review."
+      }
+    ]
+  }
+]

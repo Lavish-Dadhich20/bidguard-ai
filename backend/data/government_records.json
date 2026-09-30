@@ -1,0 +1,980 @@
+{
+  "GST": {
+    "08ABCDE1234F1Z5": {
+      "gstin": "08ABCDE1234F1Z5",
+      "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "trade_name": "DemoTech Solutions",
+      "constitution_of_business": "Private Limited Company",
+      "principal_place_of_business": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+      "date_of_liability": "01/04/2024",
+      "validity": {
+        "from": "01/04/2024",
+        "to": "Not Applicable"
+      },
+      "registration_type": "Regular",
+      "approving_authority": {
+        "name": "Sample Officer",
+        "designation": "Assistant Commissioner (Demo)",
+        "jurisdictional_office": "Sample Ward-12, Jaipur"
+      },
+      "date_of_issue": "05/04/2024",
+      "status": "ACTIVE"
+    },
+    "08AAECA1234F1Z5": {
+      "gstin": "08AAECA1234F1Z5",
+      "legal_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "trade_name": "ALPHA ENGINEERING WORKS",
+      "constitution_of_business": "Private Limited Company",
+      "principal_place_of_business": "21 Industrial Area, Sitapura, Jaipur, Rajasthan - 302022, India",
+      "date_of_liability": "01/04/2015",
+      "validity": {
+        "from": "01/04/2015",
+        "to": "Not Applicable"
+      },
+      "registration_type": "Regular",
+      "approving_authority": {
+        "name": "Sample GST Officer",
+        "designation": "Assistant Commissioner",
+        "jurisdictional_office": "Sample Ward-11, Rajasthan"
+      },
+      "date_of_issue": "06/04/2024",
+      "status": "ACTIVE"
+    },
+    "08ABTPB5678G1Z2": {
+      "gstin": "08ABTPB5678G1Z2",
+      "legal_name": "BHARAT PRECISION TOOLS LIMITED",
+      "trade_name": "BHARAT PRECISION TOOLS",
+      "constitution_of_business": "Public Limited Company",
+      "principal_place_of_business": "44 Industrial Estate, Kota, Rajasthan - 324007, India",
+      "date_of_liability": "01/05/2015",
+      "validity": {
+        "from": "01/05/2015",
+        "to": "Not Applicable"
+      },
+      "registration_type": "Regular",
+      "approving_authority": {
+        "name": "Sample GST Officer",
+        "designation": "Assistant Commissioner",
+        "jurisdictional_office": "Sample Ward-12, Rajasthan"
+      },
+      "date_of_issue": "07/04/2024",
+      "status": "ACTIVE"
+    },
+    "08AJPCL8901R1Z0": {
+      "gstin": "08AJPCL8901R1Z0",
+      "legal_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "trade_name": "JAIPUR PRECISION CASTINGS",
+      "constitution_of_business": "Public Limited Company",
+      "principal_place_of_business": "77 Industrial Area, VKI, Jaipur, Rajasthan - 302013, India",
+      "date_of_liability": "01/06/2015",
+      "validity": {
+        "from": "01/06/2015",
+        "to": "Not Applicable"
+      },
+      "registration_type": "Regular",
+      "approving_authority": {
+        "name": "Sample GST Officer",
+        "designation": "Assistant Commissioner",
+        "jurisdictional_office": "Sample Ward-13, Rajasthan"
+      },
+      "date_of_issue": "08/04/2024",
+      "status": "ACTIVE"
+    },
+    "08AFISF2345M1Z9": {
+      "gstin": "08AFISF2345M1Z9",
+      "legal_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "trade_name": "FORTUNE INDUSTRIAL SOLUTIONS",
+      "constitution_of_business": "Private Limited Company",
+      "principal_place_of_business": "12 Industrial Park, Madri, Udaipur, Rajasthan - 313003, India",
+      "date_of_liability": "01/07/2015",
+      "validity": {
+        "from": "01/07/2015",
+        "to": "Not Applicable"
+      },
+      "registration_type": "Regular",
+      "approving_authority": {
+        "name": "Sample GST Officer",
+        "designation": "Assistant Commissioner",
+        "jurisdictional_office": "Sample Ward-14, Rajasthan"
+      },
+      "date_of_issue": "09/04/2024",
+      "status": "ACTIVE"
+    }
+  },
+  "PAN": {
+    "ABCDE1234F": {
+      "pan_number": "ABCDE1234F",
+      "name": ". CATEGORY COMPANY",
+      "category": "Company",
+      "date_of_incorporation_or_birth": "15/06/2020",
+      "status": "VALID",
+      "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED"
+    },
+    "AAECA1234F": {
+      "pan_number": "AAECA1234F",
+      "name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "category": "Company",
+      "date_of_incorporation_or_birth": "12/05/2015",
+      "status": "VALID",
+      "legal_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED"
+    },
+    "ABTPB5678G": {
+      "pan_number": "ABTPB5678G",
+      "name": "BHARAT PRECISION TOOLS LIMITED",
+      "category": "Company",
+      "date_of_incorporation_or_birth": "18/04/2012",
+      "status": "VALID",
+      "legal_name": "BHARAT PRECISION TOOLS LIMITED"
+    },
+    "AJPCL8901R": {
+      "pan_number": "AJPCL8901R",
+      "name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "category": "Company",
+      "date_of_incorporation_or_birth": "09/03/2008",
+      "status": "VALID",
+      "legal_name": "JAIPUR PRECISION CASTINGS LIMITED"
+    },
+    "AFISF2345M": {
+      "pan_number": "AFISF2345M",
+      "name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "category": "Company",
+      "date_of_incorporation_or_birth": "22/07/2014",
+      "status": "VALID",
+      "legal_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED"
+    }
+  },
+  "UDYAM": {
+    "UDYAM-RJ-03-0012345": {
+      "udyam_registration_number": "UDYAM-RJ-03-0012345",
+      "enterprise_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "type_of_organisation": "Private Limited Company",
+      "major_activity": "Services",
+      "social_category": "General",
+      "official_address": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+      "date_of_incorporation": "15/06/2020",
+      "date_of_commencement": "01/08/2020",
+      "enterprise_type": "Small",
+      "date_of_udyam_registration": "10/09/2020",
+      "status": "ACTIVE",
+      "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED"
+    },
+    "UDYAM-RJ-01-0001234": {
+      "udyam_registration_number": "UDYAM-RJ-01-0001234",
+      "enterprise_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "type_of_organisation": "Private Limited Company",
+      "major_activity": "Manufacturing",
+      "social_category": "General",
+      "official_address": "21 Industrial Area, Sitapura, Jaipur, Rajasthan - 302022, India",
+      "date_of_incorporation": "12/05/2015",
+      "date_of_commencement": "01/07/2015",
+      "enterprise_type": "Medium",
+      "date_of_udyam_registration": "10/09/2020",
+      "status": "ACTIVE",
+      "legal_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED"
+    },
+    "UDYAM-RJ-02-0002345": {
+      "udyam_registration_number": "UDYAM-RJ-02-0002345",
+      "enterprise_name": "BHARAT PRECISION TOOLS LIMITED",
+      "type_of_organisation": "Public Limited Company",
+      "major_activity": "Manufacturing",
+      "social_category": "General",
+      "official_address": "44 Industrial Estate, Kota, Rajasthan - 324007, India",
+      "date_of_incorporation": "18/04/2012",
+      "date_of_commencement": "01/06/2012",
+      "enterprise_type": "Medium",
+      "date_of_udyam_registration": "10/09/2021",
+      "status": "ACTIVE",
+      "legal_name": "BHARAT PRECISION TOOLS LIMITED"
+    },
+    "UDYAM-RJ-10-0000123": {
+      "udyam_registration_number": "UDYAM-RJ-10-0000123",
+      "enterprise_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "type_of_organisation": "Public Limited Company",
+      "major_activity": "Manufacturing",
+      "social_category": "General",
+      "official_address": "77 Industrial Area, VKI, Jaipur, Rajasthan - 302013, India",
+      "date_of_incorporation": "09/03/2008",
+      "date_of_commencement": "15/05/2008",
+      "enterprise_type": "Medium",
+      "date_of_udyam_registration": "10/09/2022",
+      "status": "ACTIVE",
+      "legal_name": "JAIPUR PRECISION CASTINGS LIMITED"
+    },
+    "UDYAM-RJ-06-0006789": {
+      "udyam_registration_number": "UDYAM-RJ-06-0006789",
+      "enterprise_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "type_of_organisation": "Private Limited Company",
+      "major_activity": "Manufacturing",
+      "social_category": "General",
+      "official_address": "12 Industrial Park, Madri, Udaipur, Rajasthan - 313003, India",
+      "date_of_incorporation": "22/07/2014",
+      "date_of_commencement": "01/09/2014",
+      "enterprise_type": "Small",
+      "date_of_udyam_registration": "10/09/2023",
+      "status": "ACTIVE",
+      "legal_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED"
+    }
+  },
+  "ITR": {
+    "ABCDE1234F": {
+      "pan": "ABCDE1234F",
+      "assessment_year": "2024-25",
+      "name_of_assessee": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "gross_total_income": 8240000,
+      "total_taxable_income": 7410000,
+      "tax_paid": 1945000,
+      "acknowledgement_number": "SAMPLE293847561234",
+      "date_of_filing": "28/07/2024",
+      "filing_status": "FILED"
+    },
+    "AAECA1234F": {
+      "pan": "AAECA1234F",
+      "assessment_year": "2024-25",
+      "name_of_assessee": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "gross_total_income": 72000000,
+      "total_taxable_income": 64800000,
+      "tax_paid": 16920000,
+      "acknowledgement_number": "ACKAAECA1234F2425",
+      "date_of_filing": "11/07/2024",
+      "filing_status": "FILED"
+    },
+    "ABTPB5678G": {
+      "pan": "ABTPB5678G",
+      "assessment_year": "2024-25",
+      "name_of_assessee": "BHARAT PRECISION TOOLS LIMITED",
+      "gross_total_income": 32000000,
+      "total_taxable_income": 28800000,
+      "tax_paid": 7520000,
+      "acknowledgement_number": "ACKABTPB5678G2425",
+      "date_of_filing": "12/07/2024",
+      "filing_status": "FILED"
+    },
+    "AJPCL8901R": {
+      "pan": "AJPCL8901R",
+      "assessment_year": "2024-25",
+      "name_of_assessee": "JAIPUR PRECISION CASTINGS LIMITED",
+      "gross_total_income": 110000000,
+      "total_taxable_income": 99000000,
+      "tax_paid": 25850000,
+      "acknowledgement_number": "ACKAJPCL8901R2425",
+      "date_of_filing": "13/07/2024",
+      "filing_status": "FILED"
+    },
+    "AFISF2345M": {
+      "pan": "AFISF2345M",
+      "assessment_year": "2024-25",
+      "name_of_assessee": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "gross_total_income": 68000000,
+      "total_taxable_income": 61200000,
+      "tax_paid": 15980000,
+      "acknowledgement_number": "ACKAFISF2345M2425",
+      "date_of_filing": "14/07/2024",
+      "filing_status": "FILED"
+    }
+  },
+  "OEM": {
+    "ABCDE1234F": {
+      "oem_name": "SampleTech Manufacturing Ltd.",
+      "authorized_bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "authorized_product_or_brand": "SampleTech Industrial Routers - Series X",
+      "validity": {
+        "from": "01/04/2024",
+        "to": "31/03/2026"
+      },
+      "authorization_letter_number": "OEM/SAMPLE/2024/0098",
+      "date_of_issue": "15/03/2024",
+      "valid": true,
+      "government_valid": true
+    },
+    "AAECA1234F": {
+      "oem_name": "TechForge Machines Ltd",
+      "authorized_bidder_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "authorized_product_or_brand": "Industrial Equipment - Series X",
+      "validity": {
+        "from": "01/04/2026",
+        "to": "31/03/2028"
+      },
+      "authorization_letter_number": "OEM/REF/2026/101",
+      "date_of_issue": "16/03/2026",
+      "valid": true,
+      "government_valid": true
+    },
+    "ABTPB5678G": {
+      "oem_name": "PrecisionOEM Corp",
+      "authorized_bidder_name": "BHARAT PRECISION TOOLS LIMITED",
+      "authorized_product_or_brand": "Industrial Equipment - Series X",
+      "validity": {
+        "from": "01/04/2026",
+        "to": "31/03/2028"
+      },
+      "authorization_letter_number": "OEM/REF/2026/102",
+      "date_of_issue": "17/03/2026",
+      "valid": true,
+      "government_valid": true
+    },
+    "AJPCL8901R": {
+      "oem_name": "Jaipur OEM Foundry",
+      "authorized_bidder_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "authorized_product_or_brand": "Industrial Equipment - Series X",
+      "validity": {
+        "from": "01/04/2026",
+        "to": "31/03/2028"
+      },
+      "authorization_letter_number": "OEM/REF/2026/103",
+      "date_of_issue": "18/03/2026",
+      "valid": true,
+      "government_valid": true
+    },
+    "AFISF2345M": {
+      "oem_name": "Fortune OEM Systems",
+      "authorized_bidder_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "authorized_product_or_brand": "Industrial Equipment - Series X",
+      "validity": {
+        "from": "01/04/2026",
+        "to": "31/03/2028"
+      },
+      "authorization_letter_number": "OEM/REF/2026/104",
+      "date_of_issue": "19/03/2026",
+      "valid": true,
+      "government_valid": true
+    }
+  },
+  "EPFO": {
+    "ABCDE1234F": {
+      "epfo_establishment_code": "RJ/JPR/1234567/000",
+      "establishment_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "address": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+      "date_of_registration": "01/09/2020",
+      "compliance_status": "Compliant"
+    },
+    "AAECA1234F": {
+      "epfo_establishment_code": "RJ/JPR/2000001/000",
+      "establishment_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "address": "21 Industrial Area, Sitapura, Jaipur, Rajasthan - 302022, India",
+      "date_of_registration": "01/09/2016",
+      "compliance_status": "Compliant"
+    },
+    "ABTPB5678G": {
+      "epfo_establishment_code": "RJ/JPR/2000002/000",
+      "establishment_name": "BHARAT PRECISION TOOLS LIMITED",
+      "address": "44 Industrial Estate, Kota, Rajasthan - 324007, India",
+      "date_of_registration": "01/09/2017",
+      "compliance_status": "Compliant"
+    },
+    "AJPCL8901R": {
+      "epfo_establishment_code": "RJ/JPR/2000003/000",
+      "establishment_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "address": "77 Industrial Area, VKI, Jaipur, Rajasthan - 302013, India",
+      "date_of_registration": "01/09/2018",
+      "compliance_status": "Compliant"
+    },
+    "AFISF2345M": {
+      "epfo_establishment_code": "RJ/JPR/2000004/000",
+      "establishment_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "address": "12 Industrial Park, Madri, Udaipur, Rajasthan - 313003, India",
+      "date_of_registration": "01/09/2019",
+      "compliance_status": "Compliant"
+    }
+  },
+  "ESIC": {
+    "ABCDE1234F": {
+      "esic_registration_number": "12345678901234567",
+      "establishment_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "address": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+      "date_of_registration": "01/09/2020",
+      "compliance_status": "Compliant"
+    },
+    "AAECA1234F": {
+      "esic_registration_number": "12345678901234561",
+      "establishment_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "address": "21 Industrial Area, Sitapura, Jaipur, Rajasthan - 302022, India",
+      "date_of_registration": "01/09/2016",
+      "compliance_status": "Compliant"
+    },
+    "ABTPB5678G": {
+      "esic_registration_number": "12345678901234562",
+      "establishment_name": "BHARAT PRECISION TOOLS LIMITED",
+      "address": "44 Industrial Estate, Kota, Rajasthan - 324007, India",
+      "date_of_registration": "01/09/2017",
+      "compliance_status": "Compliant"
+    },
+    "AJPCL8901R": {
+      "esic_registration_number": "12345678901234563",
+      "establishment_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "address": "77 Industrial Area, VKI, Jaipur, Rajasthan - 302013, India",
+      "date_of_registration": "01/09/2018",
+      "compliance_status": "Compliant"
+    },
+    "AFISF2345M": {
+      "esic_registration_number": "12345678901234564",
+      "establishment_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "address": "12 Industrial Park, Madri, Udaipur, Rajasthan - 313003, India",
+      "date_of_registration": "01/09/2019",
+      "compliance_status": "Compliant"
+    }
+  },
+  "GST_RETURN": {
+    "08ABCDE1234F1Z5": {
+      "gstin": "08ABCDE1234F1Z5",
+      "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "return_period": "March 2025",
+      "return_type": "GSTR-3B",
+      "filing_date": "18/04/2025",
+      "filing_status": "FILED",
+      "acknowledgement_number": "AA0803251234567",
+      "financial_year": "2024-25",
+      "compliance_status": "COMPLIANT",
+      "taxable_turnover": null,
+      "tax_liability": null,
+      "tax_paid": null
+    },
+    "08AAECA1234F1Z5": {
+      "gstin": "08AAECA1234F1Z5",
+      "legal_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "return_period": "March 2025",
+      "return_type": "GSTR-3B",
+      "filing_date": "19/04/2025",
+      "filing_status": "FILED",
+      "acknowledgement_number": "GSTRET00012025",
+      "financial_year": "2024-25",
+      "compliance_status": "COMPLIANT",
+      "taxable_turnover": 72000000,
+      "tax_liability": 12960000,
+      "tax_paid": 12960000
+    },
+    "08ABTPB5678G1Z2": {
+      "gstin": "08ABTPB5678G1Z2",
+      "legal_name": "BHARAT PRECISION TOOLS LIMITED",
+      "return_period": "March 2025",
+      "return_type": "GSTR-3B",
+      "filing_date": "20/04/2025",
+      "filing_status": "FILED",
+      "acknowledgement_number": "GSTRET00022025",
+      "financial_year": "2024-25",
+      "compliance_status": "COMPLIANT",
+      "taxable_turnover": 32000000,
+      "tax_liability": 5760000,
+      "tax_paid": 5760000
+    },
+    "08AJPCL8901R1Z0": {
+      "gstin": "08AJPCL8901R1Z0",
+      "legal_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "return_period": "March 2025",
+      "return_type": "GSTR-3B",
+      "filing_date": "21/04/2025",
+      "filing_status": "FILED",
+      "acknowledgement_number": "GSTRET00032025",
+      "financial_year": "2024-25",
+      "compliance_status": "COMPLIANT",
+      "taxable_turnover": 110000000,
+      "tax_liability": 19800000,
+      "tax_paid": 19800000
+    },
+    "08AFISF2345M1Z9": {
+      "gstin": "08AFISF2345M1Z9",
+      "legal_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "return_period": "March 2025",
+      "return_type": "GSTR-3B",
+      "filing_date": "22/04/2025",
+      "filing_status": "FILED",
+      "acknowledgement_number": "GSTRET00042025",
+      "financial_year": "2024-25",
+      "compliance_status": "COMPLIANT",
+      "taxable_turnover": 68000000,
+      "tax_liability": 12240000,
+      "tax_paid": 12240000
+    }
+  },
+  "MAKE_IN_INDIA": {
+    "ABCDE1234F": {
+      "tender_reference": null,
+      "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "pan": "ABCDE1234F",
+      "gstin": "08ABCDE1234F1Z5",
+      "product_or_service_description": "Industrial Equipment",
+      "local_content_percentage": 65,
+      "local_content_category": "Class-I Local Supplier",
+      "country_of_origin": "India",
+      "domestic_value_addition": null,
+      "declaration_date": "15/09/2026",
+      "status": "COMPLIANT",
+      "authorized_signatory": null,
+      "declaration_reference": null,
+      "percentage": 65
+    },
+    "AAECA1234F": {
+      "tender_reference": "TDR-DEMO-001",
+      "bidder_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "pan": "AAECA1234F",
+      "gstin": "08AAECA1234F1Z5",
+      "product_or_service_description": "Industrial Equipment",
+      "local_content_percentage": 65,
+      "local_content_category": "Class-I Local Supplier",
+      "country_of_origin": "India",
+      "domestic_value_addition": 65,
+      "declaration_date": "15/09/2026",
+      "status": "COMPLIANT",
+      "authorized_signatory": "Authorized Signatory",
+      "declaration_reference": "MII/2026/001",
+      "percentage": 65
+    },
+    "ABTPB5678G": {
+      "tender_reference": "TDR-DEMO-001",
+      "bidder_name": "BHARAT PRECISION TOOLS LIMITED",
+      "pan": "ABTPB5678G",
+      "gstin": "08ABTPB5678G1Z2",
+      "product_or_service_description": "Industrial Equipment",
+      "local_content_percentage": 58,
+      "local_content_category": "Class-I Local Supplier",
+      "country_of_origin": "India",
+      "domestic_value_addition": 58,
+      "declaration_date": "15/09/2026",
+      "status": "COMPLIANT",
+      "authorized_signatory": "Authorized Signatory",
+      "declaration_reference": "MII/2026/002",
+      "percentage": 58
+    },
+    "AJPCL8901R": {
+      "tender_reference": "TDR-DEMO-001",
+      "bidder_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "pan": "AJPCL8901R",
+      "gstin": "08AJPCL8901R1Z0",
+      "product_or_service_description": "Industrial Equipment",
+      "local_content_percentage": 80,
+      "local_content_category": "Class-I Local Supplier",
+      "country_of_origin": "India",
+      "domestic_value_addition": 80,
+      "declaration_date": "15/09/2026",
+      "status": "COMPLIANT",
+      "authorized_signatory": "Authorized Signatory",
+      "declaration_reference": "MII/2026/003",
+      "percentage": 80
+    },
+    "AFISF2345M": {
+      "tender_reference": "TDR-DEMO-001",
+      "bidder_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "pan": "AFISF2345M",
+      "gstin": "08AFISF2345M1Z9",
+      "product_or_service_description": "Industrial Equipment",
+      "local_content_percentage": 35,
+      "local_content_category": "Class-II Local Supplier",
+      "country_of_origin": "India",
+      "domestic_value_addition": 35,
+      "declaration_date": "15/09/2026",
+      "status": "COMPLIANT",
+      "authorized_signatory": "Authorized Signatory",
+      "declaration_reference": "MII/2026/004",
+      "percentage": 35
+    }
+  },
+  "DPIIT_STARTUP": {
+    "ABCDE1234F": {
+      "recognition_number": "DPIIT/STARTUP/RJ/2024/00123",
+      "startup_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "cin": "U12345RJ2020PTC012345",
+      "pan": "ABCDE1234F",
+      "date_of_incorporation": null,
+      "date_of_recognition": "10/01/2024",
+      "state": "Rajasthan",
+      "entity_type": "Private Limited Company",
+      "industry_or_sector": null,
+      "registered_address": null,
+      "recognition_status": "ACTIVE",
+      "authorized_signatory": null
+    },
+    "AAECA1234F": {
+      "recognition_number": "DPIIT/STARTUP/RJ/2024/00101",
+      "startup_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "cin": "U29100RJ2015PTC048001",
+      "pan": "AAECA1234F",
+      "date_of_incorporation": "12/05/2015",
+      "date_of_recognition": "10/01/2024",
+      "state": "Rajasthan",
+      "entity_type": "Private Limited Company",
+      "industry_or_sector": "Industrial Manufacturing",
+      "registered_address": "21 Industrial Area, Sitapura, Jaipur, Rajasthan - 302022, India",
+      "recognition_status": "ACTIVE",
+      "authorized_signatory": "Authorized Signatory"
+    },
+    "ABTPB5678G": {
+      "recognition_number": "DPIIT/STARTUP/RJ/2024/00102",
+      "startup_name": "BHARAT PRECISION TOOLS LIMITED",
+      "cin": "U28920RJ2012PLC039002",
+      "pan": "ABTPB5678G",
+      "date_of_incorporation": "18/04/2012",
+      "date_of_recognition": "10/01/2024",
+      "state": "Rajasthan",
+      "entity_type": "Public Limited Company",
+      "industry_or_sector": "Industrial Manufacturing",
+      "registered_address": "44 Industrial Estate, Kota, Rajasthan - 324007, India",
+      "recognition_status": "ACTIVE",
+      "authorized_signatory": "Authorized Signatory"
+    },
+    "AJPCL8901R": {
+      "recognition_number": "DPIIT/STARTUP/RJ/2024/00103",
+      "startup_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "cin": "U27500RJ2008PTC025010",
+      "pan": "AJPCL8901R",
+      "date_of_incorporation": "09/03/2008",
+      "date_of_recognition": "10/01/2024",
+      "state": "Rajasthan",
+      "entity_type": "Public Limited Company",
+      "industry_or_sector": "Industrial Manufacturing",
+      "registered_address": "77 Industrial Area, VKI, Jaipur, Rajasthan - 302013, India",
+      "recognition_status": "ACTIVE",
+      "authorized_signatory": "Authorized Signatory"
+    },
+    "AFISF2345M": {
+      "recognition_number": "DPIIT/STARTUP/RJ/2024/00104",
+      "startup_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "cin": "U28100RJ2014PTC036006",
+      "pan": "AFISF2345M",
+      "date_of_incorporation": "22/07/2014",
+      "date_of_recognition": "10/01/2024",
+      "state": "Rajasthan",
+      "entity_type": "Private Limited Company",
+      "industry_or_sector": "Industrial Manufacturing",
+      "registered_address": "12 Industrial Park, Madri, Udaipur, Rajasthan - 313003, India",
+      "recognition_status": "ACTIVE",
+      "authorized_signatory": "Authorized Signatory"
+    }
+  },
+  "NSIC": {
+    "ABCDE1234F": {
+      "registration_number": "NSIC/RJ/2024/00456",
+      "enterprise_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "pan": "ABCDE1234F",
+      "udyam_number": "UDYAM-RJ-03-0012345",
+      "issue_date": null,
+      "validity_from": "01/04/2025",
+      "validity_to": "31/03/2027",
+      "status": "ACTIVE",
+      "address": null,
+      "certificate_category": "Micro/Small Enterprise"
+    },
+    "AAECA1234F": {
+      "registration_number": "NSIC/RJ/2024/00501",
+      "enterprise_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "pan": "AAECA1234F",
+      "udyam_number": "UDYAM-RJ-01-0001234",
+      "issue_date": "01/04/2025",
+      "validity_from": "01/04/2025",
+      "validity_to": "31/03/2027",
+      "status": "ACTIVE",
+      "address": "21 Industrial Area, Sitapura, Jaipur, Rajasthan - 302022, India",
+      "certificate_category": "Micro/Small Enterprise"
+    },
+    "ABTPB5678G": {
+      "registration_number": "NSIC/RJ/2024/00502",
+      "enterprise_name": "BHARAT PRECISION TOOLS LIMITED",
+      "pan": "ABTPB5678G",
+      "udyam_number": "UDYAM-RJ-02-0002345",
+      "issue_date": "01/04/2025",
+      "validity_from": "01/04/2025",
+      "validity_to": "31/03/2027",
+      "status": "ACTIVE",
+      "address": "44 Industrial Estate, Kota, Rajasthan - 324007, India",
+      "certificate_category": "Micro/Small Enterprise"
+    },
+    "AJPCL8901R": {
+      "registration_number": "NSIC/RJ/2024/00503",
+      "enterprise_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "pan": "AJPCL8901R",
+      "udyam_number": "UDYAM-RJ-10-0000123",
+      "issue_date": "01/04/2025",
+      "validity_from": "01/04/2025",
+      "validity_to": "31/03/2027",
+      "status": "ACTIVE",
+      "address": "77 Industrial Area, VKI, Jaipur, Rajasthan - 302013, India",
+      "certificate_category": "Micro/Small Enterprise"
+    },
+    "AFISF2345M": {
+      "registration_number": "NSIC/RJ/2024/00504",
+      "enterprise_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "pan": "AFISF2345M",
+      "udyam_number": "UDYAM-RJ-06-0006789",
+      "issue_date": "01/04/2025",
+      "validity_from": "01/04/2025",
+      "validity_to": "31/03/2027",
+      "status": "ACTIVE",
+      "address": "12 Industrial Park, Madri, Udaipur, Rajasthan - 313003, India",
+      "certificate_category": "Micro/Small Enterprise"
+    }
+  },
+  "DIGILOCKER": {
+    "ABCDE1234F": {
+      "verification_id": "DL-VERIFY-2026-001234",
+      "document_type": null,
+      "issuer": "Ministry of MSME",
+      "document_number": "UDYAM-RJ-03-0012345",
+      "holder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "verification_date": "16/09/2026",
+      "verification_status": "VERIFIED",
+      "document_uri": null,
+      "document_hash": null
+    },
+    "AAECA1234F": {
+      "verification_id": "DL-VERIFY-2026-002001",
+      "document_type": "Udyam Registration Certificate",
+      "issuer": "Ministry of MSME",
+      "document_number": "UDYAM-RJ-01-0001234",
+      "holder_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "verification_date": "16/09/2026",
+      "verification_status": "VERIFIED",
+      "document_uri": "dl://verification/AAECA1234F",
+      "document_hash": "SHA256-MOCK-AAECA1234F"
+    },
+    "ABTPB5678G": {
+      "verification_id": "DL-VERIFY-2026-002002",
+      "document_type": "Udyam Registration Certificate",
+      "issuer": "Ministry of MSME",
+      "document_number": "UDYAM-RJ-02-0002345",
+      "holder_name": "BHARAT PRECISION TOOLS LIMITED",
+      "verification_date": "16/09/2026",
+      "verification_status": "VERIFIED",
+      "document_uri": "dl://verification/ABTPB5678G",
+      "document_hash": "SHA256-MOCK-ABTPB5678G"
+    },
+    "AJPCL8901R": {
+      "verification_id": "DL-VERIFY-2026-002003",
+      "document_type": "Udyam Registration Certificate",
+      "issuer": "Ministry of MSME",
+      "document_number": "UDYAM-RJ-10-0000123",
+      "holder_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "verification_date": "16/09/2026",
+      "verification_status": "VERIFIED",
+      "document_uri": "dl://verification/AJPCL8901R",
+      "document_hash": "SHA256-MOCK-AJPCL8901R"
+    },
+    "AFISF2345M": {
+      "verification_id": "DL-VERIFY-2026-002004",
+      "document_type": "Udyam Registration Certificate",
+      "issuer": "Ministry of MSME",
+      "document_number": "UDYAM-RJ-06-0006789",
+      "holder_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "verification_date": "16/09/2026",
+      "verification_status": "VERIFIED",
+      "document_uri": "dl://verification/AFISF2345M",
+      "document_hash": "SHA256-MOCK-AFISF2345M"
+    }
+  },
+  "BLACKLISTING_DECLARATION": {
+    "ABCDE1234F": {
+      "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "pan": "ABCDE1234F",
+      "cin": "U12345RJ2020PTC012345",
+      "declaration_status": null,
+      "declaration_text": "Company is not blacklisted or debarred by any Central/State",
+      "blacklisting_status": "NOT BLACKLISTED",
+      "authority": null,
+      "reference_number": null,
+      "effective_from": null,
+      "effective_to": null,
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": null
+    },
+    "AAECA1234F": {
+      "bidder_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "pan": "AAECA1234F",
+      "cin": "U29100RJ2015PTC048001",
+      "declaration_status": "DECLARED",
+      "declaration_text": "Company is not blacklisted or debarred by any Central/State authority.",
+      "blacklisting_status": "NOT BLACKLISTED",
+      "authority": "Authorized Signatory",
+      "reference_number": "BLD/2026/001",
+      "effective_from": null,
+      "effective_to": null,
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": "Authorized Signatory"
+    },
+    "ABTPB5678G": {
+      "bidder_name": "BHARAT PRECISION TOOLS LIMITED",
+      "pan": "ABTPB5678G",
+      "cin": "U28920RJ2012PLC039002",
+      "declaration_status": "DECLARED",
+      "declaration_text": "Company is not blacklisted or debarred by any Central/State authority.",
+      "blacklisting_status": "NOT BLACKLISTED",
+      "authority": "Authorized Signatory",
+      "reference_number": "BLD/2026/002",
+      "effective_from": null,
+      "effective_to": null,
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": "Authorized Signatory"
+    },
+    "AJPCL8901R": {
+      "bidder_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "pan": "AJPCL8901R",
+      "cin": "U27500RJ2008PTC025010",
+      "declaration_status": "DECLARED",
+      "declaration_text": "Company is not blacklisted or debarred by any Central/State authority.",
+      "blacklisting_status": "NOT BLACKLISTED",
+      "authority": "Authorized Signatory",
+      "reference_number": "BLD/2026/003",
+      "effective_from": null,
+      "effective_to": null,
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": "Authorized Signatory"
+    },
+    "AFISF2345M": {
+      "bidder_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "pan": "AFISF2345M",
+      "cin": "U28100RJ2014PTC036006",
+      "declaration_status": "DECLARED",
+      "declaration_text": "Company is not blacklisted or debarred by any Central/State authority.",
+      "blacklisting_status": "NOT BLACKLISTED",
+      "authority": "Authorized Signatory",
+      "reference_number": "BLD/2026/004",
+      "effective_from": null,
+      "effective_to": null,
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": "Authorized Signatory"
+    }
+  },
+  "TENDER_BID_COMPLIANCE": {
+    "ABCDE1234F": {
+      "tender_reference": "TDR-DEMO-001",
+      "tender_title": "Supply of Industrial Equipment",
+      "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "pan": "ABCDE1234F",
+      "gstin": "08ABCDE1234F1Z5",
+      "declaration_type": null,
+      "declaration_text": "Bidder agrees to and complies with the tender terms and",
+      "compliance_status": "COMPLIANT",
+      "deviations": null,
+      "remarks": null,
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": null,
+      "signatory_designation": null
+    },
+    "AAECA1234F": {
+      "tender_reference": "TDR-DEMO-001",
+      "tender_title": "Supply of Industrial Equipment",
+      "bidder_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "pan": "AAECA1234F",
+      "gstin": "08AAECA1234F1Z5",
+      "declaration_type": "Tender Compliance Declaration",
+      "declaration_text": "Bidder agrees to and complies with the tender terms and requirements.",
+      "compliance_status": "COMPLIANT",
+      "deviations": "None",
+      "remarks": "No material deviations declared",
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": "Authorized Signatory",
+      "signatory_designation": "Director"
+    },
+    "ABTPB5678G": {
+      "tender_reference": "TDR-DEMO-001",
+      "tender_title": "Supply of Industrial Equipment",
+      "bidder_name": "BHARAT PRECISION TOOLS LIMITED",
+      "pan": "ABTPB5678G",
+      "gstin": "08ABTPB5678G1Z2",
+      "declaration_type": "Tender Compliance Declaration",
+      "declaration_text": "Bidder agrees to and complies with the tender terms and requirements.",
+      "compliance_status": "COMPLIANT",
+      "deviations": "None",
+      "remarks": "No material deviations declared",
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": "Authorized Signatory",
+      "signatory_designation": "Director"
+    },
+    "AJPCL8901R": {
+      "tender_reference": "TDR-DEMO-001",
+      "tender_title": "Supply of Industrial Equipment",
+      "bidder_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "pan": "AJPCL8901R",
+      "gstin": "08AJPCL8901R1Z0",
+      "declaration_type": "Tender Compliance Declaration",
+      "declaration_text": "Bidder agrees to and complies with the tender terms and requirements.",
+      "compliance_status": "COMPLIANT",
+      "deviations": "None",
+      "remarks": "No material deviations declared",
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": "Authorized Signatory",
+      "signatory_designation": "Director"
+    },
+    "AFISF2345M": {
+      "tender_reference": "TDR-DEMO-001",
+      "tender_title": "Supply of Industrial Equipment",
+      "bidder_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "pan": "AFISF2345M",
+      "gstin": "08AFISF2345M1Z9",
+      "declaration_type": "Tender Compliance Declaration",
+      "declaration_text": "Bidder agrees to and complies with the tender terms and requirements.",
+      "compliance_status": "COMPLIANT",
+      "deviations": "None",
+      "remarks": "No material deviations declared",
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": "Authorized Signatory",
+      "signatory_designation": "Director"
+    }
+  },
+  "MCA": {
+    "U12345RJ2020PTC012345": {
+      "status": "REGISTERED",
+      "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "company_type": "Private Limited Company",
+      "date_of_incorporation": "15/06/2020",
+      "state": "Rajasthan",
+      "country": "India",
+      "pan": "ABCDE1234F",
+      "registered_office": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+      "company_status": "ACTIVE"
+    },
+    "U29100RJ2015PTC048001": {
+      "status": "REGISTERED",
+      "legal_name": "ALPHA ENGINEERING WORKS PRIVATE LIMITED",
+      "company_type": "Private Limited Company",
+      "date_of_incorporation": "12/05/2015",
+      "state": "Rajasthan",
+      "country": "India",
+      "pan": "AAECA1234F",
+      "registered_office": "21 Industrial Area, Sitapura, Jaipur, Rajasthan - 302022, India",
+      "registrar": "Registrar of Companies, Rajasthan",
+      "authorized_capital": 10000000,
+      "paid_up_capital": 5000000,
+      "company_status": "ACTIVE"
+    },
+    "U28920RJ2012PLC039002": {
+      "status": "REGISTERED",
+      "legal_name": "BHARAT PRECISION TOOLS LIMITED",
+      "company_type": "Public Limited Company",
+      "date_of_incorporation": "18/04/2012",
+      "state": "Rajasthan",
+      "country": "India",
+      "pan": "ABTPB5678G",
+      "registered_office": "44 Industrial Estate, Kota, Rajasthan - 324007, India",
+      "registrar": "Registrar of Companies, Rajasthan",
+      "authorized_capital": 10000000,
+      "paid_up_capital": 5000000,
+      "company_status": "ACTIVE"
+    },
+    "U27500RJ2008PTC025010": {
+      "status": "REGISTERED",
+      "legal_name": "JAIPUR PRECISION CASTINGS LIMITED",
+      "company_type": "Public Limited Company",
+      "date_of_incorporation": "09/03/2008",
+      "state": "Rajasthan",
+      "country": "India",
+      "pan": "AJPCL8901R",
+      "registered_office": "77 Industrial Area, VKI, Jaipur, Rajasthan - 302013, India",
+      "registrar": "Registrar of Companies, Rajasthan",
+      "authorized_capital": 10000000,
+      "paid_up_capital": 5000000,
+      "company_status": "ACTIVE"
+    },
+    "U28100RJ2014PTC036006": {
+      "status": "REGISTERED",
+      "legal_name": "FORTUNE INDUSTRIAL SOLUTIONS PRIVATE LIMITED",
+      "company_type": "Private Limited Company",
+      "date_of_incorporation": "22/07/2014",
+      "state": "Rajasthan",
+      "country": "India",
+      "pan": "AFISF2345M",
+      "registered_office": "12 Industrial Park, Madri, Udaipur, Rajasthan - 313003, India",
+      "registrar": "Registrar of Companies, Rajasthan",
+      "authorized_capital": 10000000,
+      "paid_up_capital": 5000000,
+      "company_status": "ACTIVE"
+    }
+  },
+  "BLACKLIST": []
+}

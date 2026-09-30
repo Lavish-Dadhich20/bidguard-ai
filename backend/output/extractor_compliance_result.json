@@ -1,0 +1,1356 @@
+{
+  "bidder_id": "BID-DEMO-001",
+  "company_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+  "tender_id": "TDR-DEMO-001",
+  "extractions": [
+    {
+      "document_type": "GST_REG_06",
+      "fields": {
+        "gstin": "08ABCDE1234F1Z5",
+        "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "trade_name": "DemoTech Solutions",
+        "constitution_of_business": "Private Limited Company",
+        "principal_place_of_business": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+        "date_of_liability": "01/04/2024",
+        "validity": {
+          "from": "01/04/2024",
+          "to": "Not Applicable"
+        },
+        "registration_type": "Regular",
+        "approving_authority": {
+          "name": "Sample Officer",
+          "designation": "Assistant Commissioner (Demo)",
+          "jurisdictional_office": "Sample Ward-12, Jaipur"
+        },
+        "date_of_issue": "05/04/2024"
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "gstin_format_valid": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\gst.pdf"
+    },
+    {
+      "document_type": "PAN",
+      "fields": {
+        "pan_number": "ABCDE1234F",
+        "name": ". CATEGORY COMPANY",
+        "category": "Company",
+        "date_of_incorporation_or_birth": "15/06/2020",
+        "status": "Active"
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "pan_format_valid": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\pan.pdf"
+    },
+    {
+      "document_type": "UDYAM",
+      "fields": {
+        "udyam_registration_number": "UDYAM-RJ-03-0012345",
+        "enterprise_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "type_of_organisation": "Private Limited Company",
+        "major_activity": "Services",
+        "social_category": "General",
+        "official_address": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+        "date_of_incorporation": "15/06/2020",
+        "date_of_commencement": "01/08/2020",
+        "enterprise_type": "Small",
+        "date_of_udyam_registration": "10/09/2020"
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "udyam_format_valid": true,
+        "enterprise_type_recognized": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\udyam.pdf"
+    },
+    {
+      "document_type": "ITR",
+      "fields": {
+        "pan": "ABCDE1234F",
+        "assessment_year": "2024-25",
+        "name_of_assessee": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "gross_total_income": 8240000,
+        "total_taxable_income": 7410000,
+        "tax_paid": 1945000,
+        "acknowledgement_number": "SAMPLE293847561234",
+        "date_of_filing": "28/07/2024"
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "pan_format_valid": true,
+        "assessment_year_format_valid": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\itr.pdf"
+    },
+    {
+      "document_type": "OEM",
+      "fields": {
+        "oem_name": "SampleTech Manufacturing Ltd.",
+        "authorized_bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "authorized_product_or_brand": "SampleTech Industrial Routers - Series X",
+        "validity": {
+          "from": "01/04/2024",
+          "to": "31/03/2026"
+        },
+        "authorization_letter_number": "OEM/SAMPLE/2024/0098",
+        "date_of_issue": "15/03/2024"
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "validity_dates_present": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\oem.pdf"
+    },
+    {
+      "document_type": "EPFO",
+      "fields": {
+        "epfo_establishment_code": "RJ/JPR/1234567/000",
+        "establishment_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "address": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+        "date_of_registration": "01/09/2020",
+        "compliance_status": "Compliant"
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "code_format_valid": true,
+        "compliance_status_recognized": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\epfo.pdf"
+    },
+    {
+      "document_type": "ESIC",
+      "fields": {
+        "esic_registration_number": "12345678901234567",
+        "establishment_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "address": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+        "date_of_registration": "01/09/2020",
+        "compliance_status": "Compliant"
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "number_format_valid": true,
+        "compliance_status_recognized": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\esic.pdf"
+    },
+    {
+      "document_type": "GST_RETURN",
+      "fields": {
+        "gstin": "08ABCDE1234F1Z5",
+        "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "return_period": "March 2025",
+        "return_type": "GSTR-3B",
+        "filing_date": "18/04/2025",
+        "filing_status": "FILED",
+        "acknowledgement_number": "AA0803251234567",
+        "financial_year": "2024-25",
+        "compliance_status": "COMPLIANT",
+        "taxable_turnover": null,
+        "tax_liability": null,
+        "tax_paid": null
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "gstin_format_valid": true,
+        "filing_status_recognized": true,
+        "compliance_status_recognized": true,
+        "filing_date_format_valid": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\gst_return.pdf"
+    },
+    {
+      "document_type": "MAKE_IN_INDIA",
+      "fields": {
+        "tender_reference": null,
+        "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "pan": "ABCDE1234F",
+        "gstin": "08ABCDE1234F1Z5",
+        "product_or_service_description": "Industrial Equipment",
+        "local_content_percentage": 65,
+        "local_content_category": "Class-I Local Supplier",
+        "country_of_origin": "India",
+        "domestic_value_addition": null,
+        "declaration_date": "15/09/2026",
+        "status": "COMPLIANT",
+        "authorized_signatory": null,
+        "declaration_reference": null
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "local_content_percentage_valid": true,
+        "pan_format_valid": true,
+        "gstin_format_valid": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\make_in_india.pdf"
+    },
+    {
+      "document_type": "DPIIT_STARTUP",
+      "fields": {
+        "recognition_number": "DPIIT/STARTUP/RJ/2024/00123",
+        "startup_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "cin": "U12345RJ2020PTC012345",
+        "pan": "ABCDE1234F",
+        "date_of_incorporation": null,
+        "date_of_recognition": "10/01/2024",
+        "state": "Rajasthan",
+        "entity_type": "Private Limited Company",
+        "industry_or_sector": null,
+        "registered_address": null,
+        "recognition_status": "ACTIVE",
+        "authorized_signatory": null
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "recognition_status_present": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\dpiit_startup.pdf"
+    },
+    {
+      "document_type": "NSIC",
+      "fields": {
+        "registration_number": "NSIC/RJ/2024/00456",
+        "enterprise_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "pan": "ABCDE1234F",
+        "udyam_number": "UDYAM-RJ-03-0012345",
+        "issue_date": null,
+        "validity_from": "01/04/2025",
+        "validity_to": "31/03/2027",
+        "status": "ACTIVE",
+        "address": null,
+        "certificate_category": "Micro/Small Enterprise"
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "pan_format_valid": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\nsic.pdf"
+    },
+    {
+      "document_type": "DIGILOCKER",
+      "fields": {
+        "verification_id": "DL-VERIFY-2026-001234",
+        "document_type": null,
+        "issuer": "Ministry of MSME",
+        "document_number": "UDYAM-RJ-03-0012345",
+        "holder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "verification_date": "16/09/2026",
+        "verification_status": "VERIFIED",
+        "document_uri": null,
+        "document_hash": null
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [
+          "document_type"
+        ],
+        "verification_status_recognized": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\digilocker.pdf"
+    },
+    {
+      "document_type": "BLACKLISTING_DECLARATION",
+      "fields": {
+        "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "pan": "ABCDE1234F",
+        "cin": "U12345RJ2020PTC012345",
+        "declaration_status": null,
+        "declaration_text": "Company is not blacklisted or debarred by any Central/State",
+        "blacklisting_status": "NOT BLACKLISTED",
+        "authority": null,
+        "reference_number": null,
+        "effective_from": null,
+        "effective_to": null,
+        "declaration_date": "15/09/2026",
+        "authorized_signatory": null
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "blacklisting_status_recognized": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\blacklist_declaration.pdf"
+    },
+    {
+      "document_type": "TENDER_BID_COMPLIANCE",
+      "fields": {
+        "tender_reference": "TDR-DEMO-001",
+        "tender_title": "Supply of Industrial Equipment",
+        "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "pan": "ABCDE1234F",
+        "gstin": "08ABCDE1234F1Z5",
+        "declaration_type": null,
+        "declaration_text": "Bidder agrees to and complies with the tender terms and",
+        "compliance_status": "COMPLIANT",
+        "deviations": null,
+        "remarks": null,
+        "declaration_date": "15/09/2026",
+        "authorized_signatory": null,
+        "signatory_designation": null
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "compliance_status_recognized": true,
+        "pan_format_valid": true,
+        "gstin_format_valid": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\bid_compliance_declaration.pdf"
+    },
+    {
+      "document_type": "INCORPORATION",
+      "fields": {
+        "cin_or_registration_number": "U12345RJ2020PTC012345",
+        "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+        "company_type": "Private Limited Company",
+        "date_of_incorporation": "15/06/2020",
+        "state": "Rajasthan",
+        "country": "India",
+        "pan": "ABCDE1234F",
+        "registered_office": null,
+        "registrar": null,
+        "authorized_capital": null,
+        "paid_up_capital": null,
+        "company_status": "ACTIVE",
+        "date_of_issue": null
+      },
+      "metadata": {
+        "extraction_method": "PDF_TEXT",
+        "ocr_used": false,
+        "pages_processed": 1,
+        "warnings": [],
+        "missing_fields": [],
+        "cin_present": true,
+        "company_status_present": true,
+        "pan_format_valid": true
+      },
+      "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\incorporation.pdf"
+    }
+  ],
+  "normalized_bidder_profile": {
+    "company_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+    "pan": {
+      "number": "ABCDE1234F",
+      "status": "VALID",
+      "legal_name": ". CATEGORY COMPANY",
+      "government_legal_name": "DEMO INNOVATIONS PRIVATE LIMITED"
+    },
+    "gst": {
+      "gstin": "08ABCDE1234F1Z5",
+      "status": "ACTIVE",
+      "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "government_legal_name": "DEMO INNOVATIONS PRIVATE LIMITED"
+    },
+    "udyam": {
+      "number": "UDYAM-RJ-03-0012345",
+      "status": "ACTIVE",
+      "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "government_legal_name": "DEMO INNOVATIONS PRIVATE LIMITED"
+    },
+    "turnover": {
+      "annual_turnover": 8240000
+    },
+    "itr": {
+      "filing_status": "FILED",
+      "pan": "ABCDE1234F",
+      "assessment_year": "2024-25",
+      "name_of_assessee": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "gross_total_income": 8240000,
+      "total_taxable_income": 7410000,
+      "tax_paid": 1945000,
+      "acknowledgement_number": "SAMPLE293847561234",
+      "date_of_filing": "28/07/2024"
+    },
+    "epfo": {
+      "status": null,
+      "establishment_code": "RJ/JPR/1234567/000",
+      "establishment_name": "DEMO INNOVATIONS PRIVATE LIMITED"
+    },
+    "esic": {
+      "status": null,
+      "registration_number": "12345678901234567",
+      "establishment_name": "DEMO INNOVATIONS PRIVATE LIMITED"
+    },
+    "local_content": {
+      "percentage": 65,
+      "category": "Class-I Local Supplier",
+      "country_of_origin": "India",
+      "government_percentage": 65
+    },
+    "oem_authorization": {
+      "valid": false,
+      "oem_name": "SampleTech Manufacturing Ltd.",
+      "authorized_bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "product_or_brand": "SampleTech Industrial Routers - Series X",
+      "letter_number": "OEM/SAMPLE/2024/0098",
+      "validity": {
+        "from": "01/04/2024",
+        "to": "31/03/2026"
+      },
+      "government_valid": true,
+      "government_oem_name": "SampleTech Manufacturing Ltd."
+    },
+    "incorporation": {
+      "status": "REGISTERED",
+      "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "cin": "U12345RJ2020PTC012345",
+      "company_type": "Private Limited Company",
+      "date_of_incorporation": "15/06/2020",
+      "government_legal_name": "DEMO INNOVATIONS PRIVATE LIMITED"
+    },
+    "experience": {
+      "years": null
+    },
+    "gst_return": {
+      "gstin": "08ABCDE1234F1Z5",
+      "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "return_period": "March 2025",
+      "return_type": "GSTR-3B",
+      "filing_date": "18/04/2025",
+      "filing_status": "FILED",
+      "acknowledgement_number": "AA0803251234567",
+      "financial_year": "2024-25",
+      "compliance_status": "COMPLIANT",
+      "taxable_turnover": null,
+      "tax_liability": null,
+      "tax_paid": null
+    },
+    "make_in_india": {
+      "tender_reference": null,
+      "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "pan": "ABCDE1234F",
+      "gstin": "08ABCDE1234F1Z5",
+      "product_or_service_description": "Industrial Equipment",
+      "local_content_percentage": 65,
+      "local_content_category": "Class-I Local Supplier",
+      "country_of_origin": "India",
+      "domestic_value_addition": null,
+      "declaration_date": "15/09/2026",
+      "status": "COMPLIANT",
+      "authorized_signatory": null,
+      "declaration_reference": null
+    },
+    "dpiit_startup": {
+      "recognition_number": "DPIIT/STARTUP/RJ/2024/00123",
+      "startup_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "cin": "U12345RJ2020PTC012345",
+      "pan": "ABCDE1234F",
+      "date_of_incorporation": null,
+      "date_of_recognition": "10/01/2024",
+      "state": "Rajasthan",
+      "entity_type": "Private Limited Company",
+      "industry_or_sector": null,
+      "registered_address": null,
+      "recognition_status": "ACTIVE",
+      "authorized_signatory": null
+    },
+    "nsic": {
+      "registration_number": "NSIC/RJ/2024/00456",
+      "enterprise_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "pan": "ABCDE1234F",
+      "udyam_number": "UDYAM-RJ-03-0012345",
+      "issue_date": null,
+      "validity_from": "01/04/2025",
+      "validity_to": "31/03/2027",
+      "status": "ACTIVE",
+      "address": null,
+      "certificate_category": "Micro/Small Enterprise"
+    },
+    "digilocker": {
+      "verification_id": "DL-VERIFY-2026-001234",
+      "document_type": null,
+      "issuer": "Ministry of MSME",
+      "document_number": "UDYAM-RJ-03-0012345",
+      "holder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "verification_date": "16/09/2026",
+      "verification_status": "VERIFIED",
+      "document_uri": null,
+      "document_hash": null
+    },
+    "blacklisting_declaration": {
+      "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "pan": "ABCDE1234F",
+      "cin": "U12345RJ2020PTC012345",
+      "declaration_status": null,
+      "declaration_text": "Company is not blacklisted or debarred by any Central/State",
+      "blacklisting_status": "NOT BLACKLISTED",
+      "authority": null,
+      "reference_number": null,
+      "effective_from": null,
+      "effective_to": null,
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": null
+    },
+    "tender_bid_compliance": {
+      "tender_reference": "TDR-DEMO-001",
+      "tender_title": "Supply of Industrial Equipment",
+      "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+      "pan": "ABCDE1234F",
+      "gstin": "08ABCDE1234F1Z5",
+      "declaration_type": null,
+      "declaration_text": "Bidder agrees to and complies with the tender terms and",
+      "compliance_status": "COMPLIANT",
+      "deviations": null,
+      "remarks": null,
+      "declaration_date": "15/09/2026",
+      "authorized_signatory": null,
+      "signatory_designation": null
+    },
+    "_extractions": [
+      {
+        "document_type": "GST_REG_06",
+        "fields": {
+          "gstin": "08ABCDE1234F1Z5",
+          "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "trade_name": "DemoTech Solutions",
+          "constitution_of_business": "Private Limited Company",
+          "principal_place_of_business": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+          "date_of_liability": "01/04/2024",
+          "validity": {
+            "from": "01/04/2024",
+            "to": "Not Applicable"
+          },
+          "registration_type": "Regular",
+          "approving_authority": {
+            "name": "Sample Officer",
+            "designation": "Assistant Commissioner (Demo)",
+            "jurisdictional_office": "Sample Ward-12, Jaipur"
+          },
+          "date_of_issue": "05/04/2024"
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "gstin_format_valid": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\gst.pdf"
+      },
+      {
+        "document_type": "PAN",
+        "fields": {
+          "pan_number": "ABCDE1234F",
+          "name": ". CATEGORY COMPANY",
+          "category": "Company",
+          "date_of_incorporation_or_birth": "15/06/2020",
+          "status": "Active"
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "pan_format_valid": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\pan.pdf"
+      },
+      {
+        "document_type": "UDYAM",
+        "fields": {
+          "udyam_registration_number": "UDYAM-RJ-03-0012345",
+          "enterprise_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "type_of_organisation": "Private Limited Company",
+          "major_activity": "Services",
+          "social_category": "General",
+          "official_address": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+          "date_of_incorporation": "15/06/2020",
+          "date_of_commencement": "01/08/2020",
+          "enterprise_type": "Small",
+          "date_of_udyam_registration": "10/09/2020"
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "udyam_format_valid": true,
+          "enterprise_type_recognized": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\udyam.pdf"
+      },
+      {
+        "document_type": "ITR",
+        "fields": {
+          "pan": "ABCDE1234F",
+          "assessment_year": "2024-25",
+          "name_of_assessee": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "gross_total_income": 8240000,
+          "total_taxable_income": 7410000,
+          "tax_paid": 1945000,
+          "acknowledgement_number": "SAMPLE293847561234",
+          "date_of_filing": "28/07/2024"
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "pan_format_valid": true,
+          "assessment_year_format_valid": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\itr.pdf"
+      },
+      {
+        "document_type": "OEM",
+        "fields": {
+          "oem_name": "SampleTech Manufacturing Ltd.",
+          "authorized_bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "authorized_product_or_brand": "SampleTech Industrial Routers - Series X",
+          "validity": {
+            "from": "01/04/2024",
+            "to": "31/03/2026"
+          },
+          "authorization_letter_number": "OEM/SAMPLE/2024/0098",
+          "date_of_issue": "15/03/2024"
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "validity_dates_present": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\oem.pdf"
+      },
+      {
+        "document_type": "EPFO",
+        "fields": {
+          "epfo_establishment_code": "RJ/JPR/1234567/000",
+          "establishment_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "address": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+          "date_of_registration": "01/09/2020",
+          "compliance_status": "Compliant"
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "code_format_valid": true,
+          "compliance_status_recognized": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\epfo.pdf"
+      },
+      {
+        "document_type": "ESIC",
+        "fields": {
+          "esic_registration_number": "12345678901234567",
+          "establishment_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "address": "123, Sample Tech Park, Malviya Nagar, Jaipur, Rajasthan - 302017, India",
+          "date_of_registration": "01/09/2020",
+          "compliance_status": "Compliant"
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "number_format_valid": true,
+          "compliance_status_recognized": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\esic.pdf"
+      },
+      {
+        "document_type": "GST_RETURN",
+        "fields": {
+          "gstin": "08ABCDE1234F1Z5",
+          "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "return_period": "March 2025",
+          "return_type": "GSTR-3B",
+          "filing_date": "18/04/2025",
+          "filing_status": "FILED",
+          "acknowledgement_number": "AA0803251234567",
+          "financial_year": "2024-25",
+          "compliance_status": "COMPLIANT",
+          "taxable_turnover": null,
+          "tax_liability": null,
+          "tax_paid": null
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "gstin_format_valid": true,
+          "filing_status_recognized": true,
+          "compliance_status_recognized": true,
+          "filing_date_format_valid": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\gst_return.pdf"
+      },
+      {
+        "document_type": "MAKE_IN_INDIA",
+        "fields": {
+          "tender_reference": null,
+          "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "pan": "ABCDE1234F",
+          "gstin": "08ABCDE1234F1Z5",
+          "product_or_service_description": "Industrial Equipment",
+          "local_content_percentage": 65,
+          "local_content_category": "Class-I Local Supplier",
+          "country_of_origin": "India",
+          "domestic_value_addition": null,
+          "declaration_date": "15/09/2026",
+          "status": "COMPLIANT",
+          "authorized_signatory": null,
+          "declaration_reference": null
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "local_content_percentage_valid": true,
+          "pan_format_valid": true,
+          "gstin_format_valid": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\make_in_india.pdf"
+      },
+      {
+        "document_type": "DPIIT_STARTUP",
+        "fields": {
+          "recognition_number": "DPIIT/STARTUP/RJ/2024/00123",
+          "startup_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "cin": "U12345RJ2020PTC012345",
+          "pan": "ABCDE1234F",
+          "date_of_incorporation": null,
+          "date_of_recognition": "10/01/2024",
+          "state": "Rajasthan",
+          "entity_type": "Private Limited Company",
+          "industry_or_sector": null,
+          "registered_address": null,
+          "recognition_status": "ACTIVE",
+          "authorized_signatory": null
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "recognition_status_present": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\dpiit_startup.pdf"
+      },
+      {
+        "document_type": "NSIC",
+        "fields": {
+          "registration_number": "NSIC/RJ/2024/00456",
+          "enterprise_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "pan": "ABCDE1234F",
+          "udyam_number": "UDYAM-RJ-03-0012345",
+          "issue_date": null,
+          "validity_from": "01/04/2025",
+          "validity_to": "31/03/2027",
+          "status": "ACTIVE",
+          "address": null,
+          "certificate_category": "Micro/Small Enterprise"
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "pan_format_valid": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\nsic.pdf"
+      },
+      {
+        "document_type": "DIGILOCKER",
+        "fields": {
+          "verification_id": "DL-VERIFY-2026-001234",
+          "document_type": null,
+          "issuer": "Ministry of MSME",
+          "document_number": "UDYAM-RJ-03-0012345",
+          "holder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "verification_date": "16/09/2026",
+          "verification_status": "VERIFIED",
+          "document_uri": null,
+          "document_hash": null
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [
+            "document_type"
+          ],
+          "verification_status_recognized": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\digilocker.pdf"
+      },
+      {
+        "document_type": "BLACKLISTING_DECLARATION",
+        "fields": {
+          "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "pan": "ABCDE1234F",
+          "cin": "U12345RJ2020PTC012345",
+          "declaration_status": null,
+          "declaration_text": "Company is not blacklisted or debarred by any Central/State",
+          "blacklisting_status": "NOT BLACKLISTED",
+          "authority": null,
+          "reference_number": null,
+          "effective_from": null,
+          "effective_to": null,
+          "declaration_date": "15/09/2026",
+          "authorized_signatory": null
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "blacklisting_status_recognized": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\blacklist_declaration.pdf"
+      },
+      {
+        "document_type": "TENDER_BID_COMPLIANCE",
+        "fields": {
+          "tender_reference": "TDR-DEMO-001",
+          "tender_title": "Supply of Industrial Equipment",
+          "bidder_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "pan": "ABCDE1234F",
+          "gstin": "08ABCDE1234F1Z5",
+          "declaration_type": null,
+          "declaration_text": "Bidder agrees to and complies with the tender terms and",
+          "compliance_status": "COMPLIANT",
+          "deviations": null,
+          "remarks": null,
+          "declaration_date": "15/09/2026",
+          "authorized_signatory": null,
+          "signatory_designation": null
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "compliance_status_recognized": true,
+          "pan_format_valid": true,
+          "gstin_format_valid": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\bid_compliance_declaration.pdf"
+      },
+      {
+        "document_type": "INCORPORATION",
+        "fields": {
+          "cin_or_registration_number": "U12345RJ2020PTC012345",
+          "legal_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "company_type": "Private Limited Company",
+          "date_of_incorporation": "15/06/2020",
+          "state": "Rajasthan",
+          "country": "India",
+          "pan": "ABCDE1234F",
+          "registered_office": null,
+          "registrar": null,
+          "authorized_capital": null,
+          "paid_up_capital": null,
+          "company_status": "ACTIVE",
+          "date_of_issue": null
+        },
+        "metadata": {
+          "extraction_method": "PDF_TEXT",
+          "ocr_used": false,
+          "pages_processed": 1,
+          "warnings": [],
+          "missing_fields": [],
+          "cin_present": true,
+          "company_status_present": true,
+          "pan_format_valid": true
+        },
+        "source_file": "C:\\Users\\jsaks\\Downloads\\bidguard_compliance_integrated_latest_extractor_fixed_v2\\bidguard_compliance_integrated_latest_extractor_fixed\\bidguard_compliance_final\\extractor_engine\\bidguard\\documents\\incorporation.pdf"
+      }
+    ]
+  },
+  "stage1_document_verification": {
+    "summary": {
+      "verified": 9,
+      "review": 5,
+      "invalid": 0,
+      "missing": 1,
+      "total": 15
+    },
+    "documents": [
+      {
+        "document_type": "GST_REG_06",
+        "status": "VERIFIED",
+        "reason": "Matched GST government/reference record successfully.",
+        "government_source": "GST",
+        "government_checked": true,
+        "comparisons": [
+          {
+            "field": "legal_name",
+            "extracted": "DEMO INNOVATIONS PRIVATE LIMITED",
+            "government": "DEMO INNOVATIONS PRIVATE LIMITED",
+            "match": true
+          }
+        ]
+      },
+      {
+        "document_type": "PAN",
+        "status": "REVIEW",
+        "reason": "Government/reference record was found, but one or more extracted fields do not match: legal_name.",
+        "government_source": "PAN",
+        "government_checked": true,
+        "comparisons": [
+          {
+            "field": "legal_name",
+            "extracted": ". CATEGORY COMPANY",
+            "government": "DEMO INNOVATIONS PRIVATE LIMITED",
+            "match": false
+          }
+        ]
+      },
+      {
+        "document_type": "UDYAM",
+        "status": "VERIFIED",
+        "reason": "Matched UDYAM government/reference record successfully.",
+        "government_source": "UDYAM",
+        "government_checked": true,
+        "comparisons": [
+          {
+            "field": "legal_name",
+            "extracted": "DEMO INNOVATIONS PRIVATE LIMITED",
+            "government": "DEMO INNOVATIONS PRIVATE LIMITED",
+            "match": true
+          }
+        ]
+      },
+      {
+        "document_type": "ITR",
+        "status": "VERIFIED",
+        "reason": "Matched ITR government/reference record successfully.",
+        "government_source": "ITR",
+        "government_checked": true,
+        "comparisons": []
+      },
+      {
+        "document_type": "OEM",
+        "status": "VERIFIED",
+        "reason": "Matched OEM government/reference record successfully.",
+        "government_source": "OEM",
+        "government_checked": true,
+        "comparisons": [
+          {
+            "field": "oem_name",
+            "extracted": "SampleTech Manufacturing Ltd.",
+            "government": "SampleTech Manufacturing Ltd.",
+            "match": true
+          }
+        ]
+      },
+      {
+        "document_type": "EPFO",
+        "status": "VERIFIED",
+        "reason": "Matched EPFO government/reference record successfully.",
+        "government_source": "EPFO",
+        "government_checked": true,
+        "comparisons": []
+      },
+      {
+        "document_type": "ESIC",
+        "status": "VERIFIED",
+        "reason": "Matched ESIC government/reference record successfully.",
+        "government_source": "ESIC",
+        "government_checked": true,
+        "comparisons": []
+      },
+      {
+        "document_type": "GST_RETURN",
+        "status": "REVIEW",
+        "reason": "Document extraction is structurally valid, but no government/reference source is configured for this document type.",
+        "government_source": null,
+        "government_checked": false,
+        "comparisons": []
+      },
+      {
+        "document_type": "MAKE_IN_INDIA",
+        "status": "VERIFIED",
+        "reason": "Matched MAKE_IN_INDIA government/reference record successfully.",
+        "government_source": "MAKE_IN_INDIA",
+        "government_checked": true,
+        "comparisons": [
+          {
+            "field": "local_content_percentage",
+            "extracted": 65,
+            "government": 65,
+            "match": true
+          }
+        ]
+      },
+      {
+        "document_type": "DPIIT_STARTUP",
+        "status": "REVIEW",
+        "reason": "Document extraction is structurally valid, but no government/reference source is configured for this document type.",
+        "government_source": null,
+        "government_checked": false,
+        "comparisons": []
+      },
+      {
+        "document_type": "NSIC",
+        "status": "REVIEW",
+        "reason": "Document extraction is structurally valid, but no government/reference source is configured for this document type.",
+        "government_source": null,
+        "government_checked": false,
+        "comparisons": []
+      },
+      {
+        "document_type": "DIGILOCKER",
+        "status": "MISSING",
+        "reason": "Required extracted fields are missing: document_type.",
+        "government_source": null,
+        "government_checked": false,
+        "comparisons": []
+      },
+      {
+        "document_type": "BLACKLISTING_DECLARATION",
+        "status": "VERIFIED",
+        "reason": "No matching bidder identifier was found on the government/reference blacklist.",
+        "government_source": "BLACKLIST",
+        "government_checked": true,
+        "comparisons": [
+          {
+            "field": "blacklist_status",
+            "extracted": "NOT BLACKLISTED",
+            "government": "NOT_ON_BLACKLIST",
+            "match": true
+          }
+        ]
+      },
+      {
+        "document_type": "TENDER_BID_COMPLIANCE",
+        "status": "REVIEW",
+        "reason": "Document extraction is structurally valid, but no government/reference source is configured for this document type.",
+        "government_source": null,
+        "government_checked": false,
+        "comparisons": []
+      },
+      {
+        "document_type": "INCORPORATION",
+        "status": "VERIFIED",
+        "reason": "Matched MCA government/reference record successfully.",
+        "government_source": "MCA",
+        "government_checked": true,
+        "comparisons": [
+          {
+            "field": "legal_name",
+            "extracted": "DEMO INNOVATIONS PRIVATE LIMITED",
+            "government": "DEMO INNOVATIONS PRIVATE LIMITED",
+            "match": true
+          }
+        ]
+      }
+    ]
+  },
+  "stage2_tender_compliance": {
+    "company_name": "DEMO INNOVATIONS PRIVATE LIMITED",
+    "tender_id": "TDR-DEMO-001",
+    "compliance_percentage": 38.89,
+    "summary": {
+      "pass": 7,
+      "fail": 5,
+      "review": 6,
+      "missing": 0,
+      "total_requirements": 18
+    },
+    "mandatory_failure": true,
+    "mandatory_missing": false,
+    "overall_status": "NON_COMPLIANT_MANDATORY_FAILURE",
+    "requirements": [
+      {
+        "requirement_id": "REQ-001",
+        "requirement_name": "GST Registration Active",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'gst.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against GST government record."
+      },
+      {
+        "requirement_id": "REQ-002",
+        "requirement_name": "PAN Valid",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "PAN",
+        "status": "REVIEW",
+        "extracted_value": "VALID",
+        "required_value": "VALID",
+        "government_value": "VALID",
+        "reason": "Stage 1 document/reference verification requires manual review. 'pan.status' = 'VALID' satisfies the requirement (== 'VALID'). Confirmed against PAN government record."
+      },
+      {
+        "requirement_id": "REQ-003",
+        "requirement_name": "Udyam Registration Active",
+        "category": "MSME",
+        "mandatory": true,
+        "verification_source": "UDYAM",
+        "status": "PASS",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": "ACTIVE",
+        "reason": "'udyam.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). Confirmed against UDYAM government record."
+      },
+      {
+        "requirement_id": "REQ-004",
+        "requirement_name": "Minimum Annual Turnover (Rs. 5 Crore)",
+        "category": "FINANCIAL",
+        "mandatory": true,
+        "verification_source": "TURNOVER",
+        "status": "FAIL",
+        "extracted_value": 8240000,
+        "required_value": 50000000,
+        "government_value": 8240000,
+        "reason": "'turnover.annual_turnover' = 8240000 does NOT satisfy the requirement (>= 50000000). Confirmed against TURNOVER government record."
+      },
+      {
+        "requirement_id": "REQ-005",
+        "requirement_name": "ITR Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "ITR",
+        "status": "PASS",
+        "extracted_value": "FILED",
+        "required_value": "FILED",
+        "government_value": "FILED",
+        "reason": "'itr.filing_status' = 'FILED' satisfies the requirement (== 'FILED'). Confirmed against ITR government record."
+      },
+      {
+        "requirement_id": "REQ-006",
+        "requirement_name": "EPFO Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "EPFO",
+        "status": "FAIL",
+        "extracted_value": null,
+        "required_value": "COMPLIANT",
+        "government_value": null,
+        "reason": "'epfo.status' = None does NOT satisfy the requirement (== 'COMPLIANT'). No matching EPFO government record was found to cross-check."
+      },
+      {
+        "requirement_id": "REQ-007",
+        "requirement_name": "ESIC Compliance",
+        "category": "LABOUR_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "ESIC",
+        "status": "FAIL",
+        "extracted_value": null,
+        "required_value": "COMPLIANT",
+        "government_value": null,
+        "reason": "'esic.status' = None does NOT satisfy the requirement (== 'COMPLIANT'). No matching ESIC government record was found to cross-check."
+      },
+      {
+        "requirement_id": "REQ-008",
+        "requirement_name": "Minimum Local Content (50%)",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "MAKE_IN_INDIA",
+        "status": "PASS",
+        "extracted_value": 65,
+        "required_value": 50,
+        "government_value": 65,
+        "reason": "'local_content.percentage' = 65 satisfies the requirement (>= 50). Confirmed against MAKE_IN_INDIA government record."
+      },
+      {
+        "requirement_id": "REQ-009",
+        "requirement_name": "OEM Authorization Mandatory",
+        "category": "MANUFACTURING",
+        "mandatory": true,
+        "verification_source": "OEM",
+        "status": "FAIL",
+        "extracted_value": false,
+        "required_value": true,
+        "government_value": true,
+        "reason": "'oem_authorization.valid' = False does NOT satisfy the requirement (boolean True). The OEM government record also shows a differing/non-conforming value (True)."
+      },
+      {
+        "requirement_id": "REQ-010",
+        "requirement_name": "Bidder Not Blacklisted / Debarred",
+        "category": "ELIGIBILITY",
+        "mandatory": true,
+        "verification_source": "BLACKLIST",
+        "status": "PASS",
+        "extracted_value": {
+          "pan": "ABCDE1234F",
+          "company_name": "DEMO INNOVATIONS PRIVATE LIMITED"
+        },
+        "required_value": null,
+        "government_value": "NOT_ON_BLACKLIST",
+        "reason": "Bidder does not appear on the government blacklist/debarment list."
+      },
+      {
+        "requirement_id": "REQ-011",
+        "requirement_name": "Certificate of Incorporation / Business Registration",
+        "category": "LEGAL",
+        "mandatory": true,
+        "verification_source": "MCA",
+        "status": "PASS",
+        "extracted_value": "REGISTERED",
+        "required_value": "REGISTERED",
+        "government_value": "REGISTERED",
+        "reason": "'incorporation.status' = 'REGISTERED' satisfies the requirement (== 'REGISTERED'). Confirmed against MCA government record."
+      },
+      {
+        "requirement_id": "REQ-012",
+        "requirement_name": "Minimum Relevant Experience (3 Years)",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "FAIL",
+        "extracted_value": null,
+        "required_value": 3,
+        "government_value": null,
+        "reason": "'experience.years' = None does NOT satisfy the requirement (>= 3). (No independent government verification source configured for this requirement.)"
+      },
+      {
+        "requirement_id": "REQ-013",
+        "requirement_name": "Legal Name Consistency Across Documents",
+        "category": "IDENTITY",
+        "mandatory": false,
+        "verification_source": null,
+        "status": "REVIEW",
+        "extracted_value": {
+          "PAN": ". CATEGORY COMPANY",
+          "GST": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "UDYAM": "DEMO INNOVATIONS PRIVATE LIMITED",
+          "INCORPORATION": "DEMO INNOVATIONS PRIVATE LIMITED"
+        },
+        "required_value": null,
+        "government_value": null,
+        "reason": "Legal name differs across documents (PAN='CATEGORY COMPANY', GST='DEMO INNOVATIONS PRIVATE LIMITED', UDYAM='DEMO INNOVATIONS PRIVATE LIMITED', INCORPORATION='DEMO INNOVATIONS PRIVATE LIMITED'). This may be a harmless formatting difference or a genuine identity mismatch and requires manual review."
+      },
+      {
+        "requirement_id": "REQ-014",
+        "requirement_name": "GST Return Filing Compliant",
+        "category": "STATUTORY",
+        "mandatory": true,
+        "verification_source": "GST_RETURN",
+        "status": "PASS",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": "COMPLIANT",
+        "reason": "'gst_return.compliance_status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). Confirmed against GST_RETURN government record."
+      },
+      {
+        "requirement_id": "REQ-015",
+        "requirement_name": "DPIIT Startup Recognition Active",
+        "category": "ELIGIBILITY",
+        "mandatory": false,
+        "verification_source": "DPIIT_STARTUP",
+        "status": "REVIEW",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": null,
+        "reason": "'dpiit_startup.recognition_status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). However, no matching DPIIT_STARTUP government record was found for verification (identifier: 'DPIIT/STARTUP/RJ/2024/00123'), so this requires manual review."
+      },
+      {
+        "requirement_id": "REQ-016",
+        "requirement_name": "NSIC Registration Active",
+        "category": "MSME",
+        "mandatory": false,
+        "verification_source": "NSIC",
+        "status": "REVIEW",
+        "extracted_value": "ACTIVE",
+        "required_value": "ACTIVE",
+        "government_value": null,
+        "reason": "'nsic.status' = 'ACTIVE' satisfies the requirement (== 'ACTIVE'). However, no matching NSIC government record was found for verification (identifier: 'NSIC/RJ/2024/00456'), so this requires manual review."
+      },
+      {
+        "requirement_id": "REQ-017",
+        "requirement_name": "DigiLocker Document Verification",
+        "category": "DOCUMENT_VERIFICATION",
+        "mandatory": true,
+        "verification_source": "DIGILOCKER",
+        "status": "REVIEW",
+        "extracted_value": "VERIFIED",
+        "required_value": "VERIFIED",
+        "government_value": null,
+        "reason": "'digilocker.verification_status' = 'VERIFIED' satisfies the requirement (== 'VERIFIED'). However, no matching DIGILOCKER government record was found for verification (identifier: 'DL-VERIFY-2026-001234'), so this requires manual review."
+      },
+      {
+        "requirement_id": "REQ-018",
+        "requirement_name": "Tender / Bid Compliance Declaration",
+        "category": "TENDER_COMPLIANCE",
+        "mandatory": true,
+        "verification_source": "TENDER_BID_COMPLIANCE",
+        "status": "REVIEW",
+        "extracted_value": "COMPLIANT",
+        "required_value": "COMPLIANT",
+        "government_value": null,
+        "reason": "'tender_bid_compliance.compliance_status' = 'COMPLIANT' satisfies the requirement (== 'COMPLIANT'). However, no matching TENDER_BID_COMPLIANCE government record was found for verification (identifier: 'TDR-DEMO-001'), so this requires manual review."
+      }
+    ]
+  }
+}

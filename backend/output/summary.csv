@@ -1,0 +1,11 @@
+company_name,tender_id,pass,fail,review,missing,compliance_percentage,mandatory_failure,mandatory_missing,overall_status
+Alpha Engineering Works Pvt Ltd,TDR-DEMO-001,13,0,0,0,100.0,False,False,COMPLIANT
+Bharat Precision Tools Ltd,TDR-DEMO-001,12,1,0,0,92.31,True,False,NON_COMPLIANT_MANDATORY_FAILURE
+Chandra Fabrication Industries Pvt Ltd,TDR-DEMO-001,12,1,0,0,92.31,True,False,NON_COMPLIANT_MANDATORY_FAILURE
+Deccan Metal Works Pvt Ltd,TDR-DEMO-001,12,0,1,0,92.31,False,False,NEEDS_MANUAL_REVIEW
+Everest Heavy Machinery Ltd,TDR-DEMO-001,12,0,0,1,92.31,False,True,INCOMPLETE_MANDATORY_DATA_MISSING
+Fortune Industrial Solutions Pvt Ltd,TDR-DEMO-001,12,1,0,0,92.31,True,False,NON_COMPLIANT_MANDATORY_FAILURE
+Ganga Steel & Allied Industries Limited,TDR-DEMO-001,12,1,0,0,92.31,True,False,NON_COMPLIANT_MANDATORY_FAILURE
+Hind Auto Components Pvt Ltd,TDR-DEMO-001,12,0,1,0,92.31,False,False,NEEDS_MANUAL_REVIEW
+Indus Global Manufacturing Pvt Ltd,TDR-DEMO-001,7,2,3,1,53.85,True,True,NON_COMPLIANT_MANDATORY_FAILURE
+Jaipur Precision Castings Ltd,TDR-DEMO-001,12,0,1,0,92.31,False,False,NEEDS_MANUAL_REVIEW

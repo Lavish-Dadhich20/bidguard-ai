@@ -1,0 +1,66 @@
+{
+  "company_id": "BID-DEMO-001",
+  "tender_id": "TDR-DEMO-001",
+  "documents": [
+    {
+      "document_type": "GST_REG_06",
+      "path": "../extractor_engine/bidguard/documents/gst.pdf"
+    },
+    {
+      "document_type": "PAN",
+      "path": "../extractor_engine/bidguard/documents/pan.pdf"
+    },
+    {
+      "document_type": "UDYAM",
+      "path": "../extractor_engine/bidguard/documents/udyam.pdf"
+    },
+    {
+      "document_type": "ITR",
+      "path": "../extractor_engine/bidguard/documents/itr.pdf"
+    },
+    {
+      "document_type": "OEM",
+      "path": "../extractor_engine/bidguard/documents/oem.pdf"
+    },
+    {
+      "document_type": "EPFO",
+      "path": "../extractor_engine/bidguard/documents/epfo.pdf"
+    },
+    {
+      "document_type": "ESIC",
+      "path": "../extractor_engine/bidguard/documents/esic.pdf"
+    },
+    {
+      "document_type": "GST_RETURN",
+      "path": "../extractor_engine/bidguard/documents/gst_return.pdf"
+    },
+    {
+      "document_type": "MAKE_IN_INDIA",
+      "path": "../extractor_engine/bidguard/documents/make_in_india.pdf"
+    },
+    {
+      "document_type": "DPIIT_STARTUP",
+      "path": "../extractor_engine/bidguard/documents/dpiit_startup.pdf"
+    },
+    {
+      "document_type": "NSIC",
+      "path": "../extractor_engine/bidguard/documents/nsic.pdf"
+    },
+    {
+      "document_type": "DIGILOCKER",
+      "path": "../extractor_engine/bidguard/documents/digilocker.pdf"
+    },
+    {
+      "document_type": "BLACKLISTING_DECLARATION",
+      "path": "../extractor_engine/bidguard/documents/blacklist_declaration.pdf"
+    },
+    {
+      "document_type": "TENDER_BID_COMPLIANCE",
+      "path": "../extractor_engine/bidguard/documents/bid_compliance_declaration.pdf"
+    },
+    {
+      "document_type": "INCORPORATION",
+      "path": "../extractor_engine/bidguard/documents/incorporation.pdf"
+    }
+  ]
+}
